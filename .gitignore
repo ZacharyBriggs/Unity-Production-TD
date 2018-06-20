@@ -34,3 +34,6 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+ProjectSettings/ProjectVersion.txt
+Assets/Scripts/CameraFollowingBehaviour.cs
+ProjectSettings/ProjectVersion.txt
