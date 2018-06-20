@@ -7,7 +7,7 @@ public class CameraFollowingBehaviour : MonoBehaviour {
 
     float x_pos=0.0f, y_pos=0.0f, z_pos=0.0f;
    
-    Vector3 Playerpos(float x,float, float z)
+    Vector3 Playerpos(float x,float y, float z)
     {
         Vector3 mPlayerpos;
         mPlayerpos.x = x_pos;
