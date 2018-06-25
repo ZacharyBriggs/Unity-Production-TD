@@ -35,4 +35,14 @@ public class PayloadBehaviour : MonoBehaviour
         NextNode += 1;
         Agent.destination = Path.Steps[NextNode];
     }
+
+    void OnDrawGizmos()
+    {
+        Path.SetNodes();
+        foreach (var step in Path.Steps)
+        {
+            Gizmos.DrawCube(step, new Vector3(1, 1, 1));
+        }
+        Path.UpdatePositions();
+    }
 }
