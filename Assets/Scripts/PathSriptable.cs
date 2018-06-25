@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-[CreateAssetMenu(fileName = "New Path", menuName = "Path")]
+[CreateAssetMenu(fileName = "New Path", menuName = "Health")]
 public class PathSriptable : ScriptableObject
 {
     public List<Vector3> Steps;
@@ -21,9 +21,9 @@ public class PathSriptable : ScriptableObject
 
     public void UpdatePositions()
     {
-        foreach (var node in Nodes)
+        for (int i = 0; i < Nodes.Count; i++)
         {
-            Steps[Nodes.IndexOf(node)] = node.transform.position;
+            Steps[i] = Nodes[i].transform.position;
         }
     }
 }

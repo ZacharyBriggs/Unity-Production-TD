@@ -18,8 +18,8 @@ public class HealthUIBehaviour : MonoBehaviour
 	void Update ()
     {
         PayloadBehaviour pb = Payload.GetComponent<PayloadBehaviour>();
-        HealthText.text = pb.HP.ToString();
-        float value = pb.HP / 100;
-        HealthUI.fillAmount = value;
+        //HealthText.text = pb.HP.ToString();
+        //float value = pb.HP / 100;
+        //HealthUI.fillAmount = value;
 	}
 }

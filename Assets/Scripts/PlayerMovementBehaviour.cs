@@ -4,24 +4,30 @@ using UnityEngine;
 
 public class PlayerMovementBehaviour : MonoBehaviour
 {
-    public float Speed = 20;
+    public float Speed = 10;
+    public Vector3 InputVector;
+    private CharacterController controller;
+
+    public Vector3 camRight;
+
+    public Vector3 camForward;
     // Use this for initialization
     void Start()
     {
-        Speed *= 500;
+        controller = GetComponent<CharacterController>();
     }
-
     // Update is called once per frame
     void Update()
     {
-        Rigidbody rb3d = GetComponent<Rigidbody>();
-        if (Input.GetButton("Forward"))
-            rb3d.AddForce(Vector3.forward * Speed * Time.deltaTime);
-        if (Input.GetButton("Backward"))
-            rb3d.AddForce(Vector3.back * Speed * Time.deltaTime);
-        if (Input.GetButton("Left"))
-            rb3d.AddForce(Vector3.left * Speed * Time.deltaTime);
-        if (Input.GetButton("Right"))
-            rb3d.AddForce(Vector3.right * Speed * Time.deltaTime);
+        camRight = Camera.main.transform.right;
+        camForward = Camera.main.transform.forward;
+
+        var h = Input.GetAxis("Horizontal");
+        var v = Input.GetAxis("Vertical");
+        InputVector = new Vector3(h,0,v);
+        camForward *= InputVector.z;
+        camRight *= InputVector.x;
+        Vector3 moveVector = (camForward + camRight);
+        controller.SimpleMove(moveVector.normalized*Speed);
     }
 }

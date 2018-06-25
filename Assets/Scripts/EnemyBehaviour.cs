@@ -6,6 +6,8 @@ using UnityEngine.AI;
 public class EnemyBehaviour : MonoBehaviour
 {    
     private GameObject Target;
+
+    public int HP;
 	// Use this for initialization
 	void Start ()
 	{
@@ -17,5 +19,9 @@ public class EnemyBehaviour : MonoBehaviour
 	void Update ()
 	{
 	    GetComponent<NavMeshAgent>().destination = Target.transform.position;
+	    if (HP <= 0)
+	    {
+            Destroy(this.gameObject);
+	    }
     }
 }
