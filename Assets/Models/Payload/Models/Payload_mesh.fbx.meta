@@ -79,6 +79,14 @@ ModelImporter:
     100142: turrent_ring 1
     100144: turrent_shaft
     100146: turrent_shaft 1
+    100148: payload_bottom_center
+    100150: payload_centerpart
+    100152: payload_mid_center
+    100154: payload_middle
+    100156: testla_base1_tesla_lower_coil
+    100158: testla_base2_tesla_rod
+    100160: testla_base3_tesla_rod
+    100162: testla_base_tesla_rod
     400000: Cylinder005
     400002: payload1:Cylinder005
     400004: payload_2:Box013
@@ -153,6 +161,14 @@ ModelImporter:
     400142: turrent_ring 1
     400144: turrent_shaft
     400146: turrent_shaft 1
+    400148: payload_bottom_center
+    400150: payload_centerpart
+    400152: payload_mid_center
+    400154: payload_middle
+    400156: testla_base1_tesla_lower_coil
+    400158: testla_base2_tesla_rod
+    400160: testla_base3_tesla_rod
+    400162: testla_base_tesla_rod
     2100000: StingrayPBS1
     2300000: Cylinder005
     2300002: payload1:Cylinder005
@@ -224,6 +240,14 @@ ModelImporter:
     2300134: turrent_ring 1
     2300136: turrent_shaft
     2300138: turrent_shaft 1
+    2300140: payload_bottom_center
+    2300142: payload_centerpart
+    2300144: payload_mid_center
+    2300146: payload_middle
+    2300148: testla_base1_tesla_lower_coil
+    2300150: testla_base2_tesla_rod
+    2300152: testla_base3_tesla_rod
+    2300154: testla_base_tesla_rod
     3300000: Cylinder005
     3300002: payload1:Cylinder005
     3300004: payload_2:Box013
@@ -294,6 +318,14 @@ ModelImporter:
     3300134: turrent_ring 1
     3300136: turrent_shaft
     3300138: turrent_shaft 1
+    3300140: payload_bottom_center
+    3300142: payload_centerpart
+    3300144: payload_mid_center
+    3300146: payload_middle
+    3300148: testla_base1_tesla_lower_coil
+    3300150: testla_base2_tesla_rod
+    3300152: testla_base3_tesla_rod
+    3300154: testla_base_tesla_rod
     4300000: payload_foundation_panel2
     4300002: payload_foundation_panel1
     4300004: Turrent_base
@@ -364,6 +396,14 @@ ModelImporter:
     4300134: payload_panel_top
     4300136: payload_panel_top2
     4300138: payload_shaft_panel
+    4300140: payload_centerpart
+    4300142: payload_middle
+    4300144: payload_bottom_center
+    4300146: payload_mid_center
+    4300148: testla_base1_tesla_lower_coil
+    4300150: testla_base_tesla_rod
+    4300152: testla_base3_tesla_rod
+    4300154: testla_base2_tesla_rod
     9500000: //RootNode
   externalObjects: {}
   materials:
