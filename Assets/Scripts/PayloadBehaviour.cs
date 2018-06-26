@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class PayloadBehaviour : MonoBehaviour
 {
     public PathSriptable Path;
-    public float Radius;
+    public float Range;
 
     private int CurrentNode = 0;
     private int NextNode = 1;
@@ -22,7 +22,7 @@ public class PayloadBehaviour : MonoBehaviour
         Agent.destination = Path.Steps[NextNode];
         Payload = GetComponent<NavMeshAgent>();
         Sphere = GetComponent<SphereCollider>();
-        Sphere.radius = Radius;
+        Sphere.radius = Range;
     }
 
     // Update is called once per frame

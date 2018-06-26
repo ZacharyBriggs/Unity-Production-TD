@@ -21,7 +21,6 @@ public class PlayerMovementBehaviour : MonoBehaviour
     {
         camRight = Camera.main.transform.right;
         camForward = Camera.main.transform.forward;
-
         var h = Input.GetAxis("Horizontal");
         var v = Input.GetAxis("Vertical");
         InputVector = new Vector3(h,0,v);
