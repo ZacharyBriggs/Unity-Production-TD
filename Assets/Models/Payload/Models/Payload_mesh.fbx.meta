@@ -1,0 +1,487 @@
+fileFormatVersion: 2
+guid: ba60094405e4df54fab92e28cb9cbccc
+timeCreated: 1530030357
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Cylinder005
+    100002: payload1:Cylinder005
+    100004: payload_2:Box013
+    100006: payload_2:Cylinder003
+    100008: payload_2:Cylinder004
+    100010: payload_2:Object005
+    100012: payload_foundation
+    100014: payload_foundation_grp
+    100016: payload_foundation_panel
+    100018: payload_foundation_panel1
+    100020: payload_foundation_panel2
+    100022: payload_gravity_wheel1
+    100024: payload_gravity_wheel2
+    100026: payload_gravity_wheel3
+    100028: payload_gravity_wheel4
+    100030: //RootNode
+    100032: payload_panel_shaft2
+    100034: payload_panel_top
+    100036: payload_panel_top2
+    100038: Payload_rotator
+    100040: payload_shaft
+    100042: payload_shaft_panel
+    100044: payload_tip
+    100046: payload_tower_grp
+    100048: Sphere001
+    100050: Sphere001 1
+    100052: Sphere001 2
+    100054: Sphere001 3
+    100056: tesla_arm
+    100058: tesla_arm 1
+    100060: tesla_arm 2
+    100062: tesla_arm 3
+    100064: tesla_lower_coil
+    100066: tesla_lower_coil 1
+    100068: tesla_lower_coil 2
+    100070: tesla_lower_coil 3
+    100072: tesla_lower_coil2
+    100074: tesla_lower_coil2 1
+    100076: tesla_lower_coil2 2
+    100078: tesla_lower_coil2 3
+    100080: tesla_lower_coil3
+    100082: tesla_lower_coil3 1
+    100084: tesla_lower_coil3 2
+    100086: tesla_lower_coil3 3
+    100088: tesla_main
+    100090: tesla_main 1
+    100092: tesla_main 2
+    100094: tesla_main 3
+    100096: tesla_rod
+    100098: tesla_rod 1
+    100100: tesla_rod 2
+    100102: tesla_rod 3
+    100104: testla_base
+    100106: testla_base1
+    100108: testla_base2
+    100110: testla_base3
+    100112: turrent_back
+    100114: turrent_back 1
+    100116: turrent_barrel_1
+    100118: turrent_barrel_1 1
+    100120: turrent_barrel_base
+    100122: turrent_barrel_base 1
+    100124: Turrent_base
+    100126: Turrent_base1
+    100128: turrent_lower
+    100130: turrent_lower 1
+    100132: turrent_lower_base
+    100134: turrent_lower_base 1
+    100136: turrent_muzzle
+    100138: turrent_muzzle 1
+    100140: turrent_ring
+    100142: turrent_ring 1
+    100144: turrent_shaft
+    100146: turrent_shaft 1
+    100148: payload_bottom_center
+    100150: payload_centerpart
+    100152: payload_mid_center
+    100154: payload_middle
+    100156: testla_base1_tesla_lower_coil
+    100158: testla_base2_tesla_rod
+    100160: testla_base3_tesla_rod
+    100162: testla_base_tesla_rod
+    400000: Cylinder005
+    400002: payload1:Cylinder005
+    400004: payload_2:Box013
+    400006: payload_2:Cylinder003
+    400008: payload_2:Cylinder004
+    400010: payload_2:Object005
+    400012: payload_foundation
+    400014: payload_foundation_grp
+    400016: payload_foundation_panel
+    400018: payload_foundation_panel1
+    400020: payload_foundation_panel2
+    400022: payload_gravity_wheel1
+    400024: payload_gravity_wheel2
+    400026: payload_gravity_wheel3
+    400028: payload_gravity_wheel4
+    400030: //RootNode
+    400032: payload_panel_shaft2
+    400034: payload_panel_top
+    400036: payload_panel_top2
+    400038: Payload_rotator
+    400040: payload_shaft
+    400042: payload_shaft_panel
+    400044: payload_tip
+    400046: payload_tower_grp
+    400048: Sphere001
+    400050: Sphere001 1
+    400052: Sphere001 2
+    400054: Sphere001 3
+    400056: tesla_arm
+    400058: tesla_arm 1
+    400060: tesla_arm 2
+    400062: tesla_arm 3
+    400064: tesla_lower_coil
+    400066: tesla_lower_coil 1
+    400068: tesla_lower_coil 2
+    400070: tesla_lower_coil 3
+    400072: tesla_lower_coil2
+    400074: tesla_lower_coil2 1
+    400076: tesla_lower_coil2 2
+    400078: tesla_lower_coil2 3
+    400080: tesla_lower_coil3
+    400082: tesla_lower_coil3 1
+    400084: tesla_lower_coil3 2
+    400086: tesla_lower_coil3 3
+    400088: tesla_main
+    400090: tesla_main 1
+    400092: tesla_main 2
+    400094: tesla_main 3
+    400096: tesla_rod
+    400098: tesla_rod 1
+    400100: tesla_rod 2
+    400102: tesla_rod 3
+    400104: testla_base
+    400106: testla_base1
+    400108: testla_base2
+    400110: testla_base3
+    400112: turrent_back
+    400114: turrent_back 1
+    400116: turrent_barrel_1
+    400118: turrent_barrel_1 1
+    400120: turrent_barrel_base
+    400122: turrent_barrel_base 1
+    400124: Turrent_base
+    400126: Turrent_base1
+    400128: turrent_lower
+    400130: turrent_lower 1
+    400132: turrent_lower_base
+    400134: turrent_lower_base 1
+    400136: turrent_muzzle
+    400138: turrent_muzzle 1
+    400140: turrent_ring
+    400142: turrent_ring 1
+    400144: turrent_shaft
+    400146: turrent_shaft 1
+    400148: payload_bottom_center
+    400150: payload_centerpart
+    400152: payload_mid_center
+    400154: payload_middle
+    400156: testla_base1_tesla_lower_coil
+    400158: testla_base2_tesla_rod
+    400160: testla_base3_tesla_rod
+    400162: testla_base_tesla_rod
+    2100000: StingrayPBS1
+    2300000: Cylinder005
+    2300002: payload1:Cylinder005
+    2300004: payload_2:Box013
+    2300006: payload_2:Cylinder003
+    2300008: payload_2:Cylinder004
+    2300010: payload_2:Object005
+    2300012: payload_foundation
+    2300014: payload_foundation_panel1
+    2300016: payload_foundation_panel2
+    2300018: payload_gravity_wheel1
+    2300020: payload_gravity_wheel2
+    2300022: payload_gravity_wheel3
+    2300024: payload_gravity_wheel4
+    2300026: payload_panel_shaft2
+    2300028: payload_panel_top
+    2300030: payload_panel_top2
+    2300032: Payload_rotator
+    2300034: payload_shaft
+    2300036: payload_shaft_panel
+    2300038: payload_tip
+    2300040: Sphere001
+    2300042: Sphere001 1
+    2300044: Sphere001 2
+    2300046: Sphere001 3
+    2300048: tesla_arm
+    2300050: tesla_arm 1
+    2300052: tesla_arm 2
+    2300054: tesla_arm 3
+    2300056: tesla_lower_coil
+    2300058: tesla_lower_coil 1
+    2300060: tesla_lower_coil 2
+    2300062: tesla_lower_coil 3
+    2300064: tesla_lower_coil2
+    2300066: tesla_lower_coil2 1
+    2300068: tesla_lower_coil2 2
+    2300070: tesla_lower_coil2 3
+    2300072: tesla_lower_coil3
+    2300074: tesla_lower_coil3 1
+    2300076: tesla_lower_coil3 2
+    2300078: tesla_lower_coil3 3
+    2300080: tesla_main
+    2300082: tesla_main 1
+    2300084: tesla_main 2
+    2300086: tesla_main 3
+    2300088: tesla_rod
+    2300090: tesla_rod 1
+    2300092: tesla_rod 2
+    2300094: tesla_rod 3
+    2300096: testla_base
+    2300098: testla_base1
+    2300100: testla_base2
+    2300102: testla_base3
+    2300104: turrent_back
+    2300106: turrent_back 1
+    2300108: turrent_barrel_1
+    2300110: turrent_barrel_1 1
+    2300112: turrent_barrel_base
+    2300114: turrent_barrel_base 1
+    2300116: Turrent_base
+    2300118: Turrent_base1
+    2300120: turrent_lower
+    2300122: turrent_lower 1
+    2300124: turrent_lower_base
+    2300126: turrent_lower_base 1
+    2300128: turrent_muzzle
+    2300130: turrent_muzzle 1
+    2300132: turrent_ring
+    2300134: turrent_ring 1
+    2300136: turrent_shaft
+    2300138: turrent_shaft 1
+    2300140: payload_bottom_center
+    2300142: payload_centerpart
+    2300144: payload_mid_center
+    2300146: payload_middle
+    2300148: testla_base1_tesla_lower_coil
+    2300150: testla_base2_tesla_rod
+    2300152: testla_base3_tesla_rod
+    2300154: testla_base_tesla_rod
+    3300000: Cylinder005
+    3300002: payload1:Cylinder005
+    3300004: payload_2:Box013
+    3300006: payload_2:Cylinder003
+    3300008: payload_2:Cylinder004
+    3300010: payload_2:Object005
+    3300012: payload_foundation
+    3300014: payload_foundation_panel1
+    3300016: payload_foundation_panel2
+    3300018: payload_gravity_wheel1
+    3300020: payload_gravity_wheel2
+    3300022: payload_gravity_wheel3
+    3300024: payload_gravity_wheel4
+    3300026: payload_panel_shaft2
+    3300028: payload_panel_top
+    3300030: payload_panel_top2
+    3300032: Payload_rotator
+    3300034: payload_shaft
+    3300036: payload_shaft_panel
+    3300038: payload_tip
+    3300040: Sphere001
+    3300042: Sphere001 1
+    3300044: Sphere001 2
+    3300046: Sphere001 3
+    3300048: tesla_arm
+    3300050: tesla_arm 1
+    3300052: tesla_arm 2
+    3300054: tesla_arm 3
+    3300056: tesla_lower_coil
+    3300058: tesla_lower_coil 1
+    3300060: tesla_lower_coil 2
+    3300062: tesla_lower_coil 3
+    3300064: tesla_lower_coil2
+    3300066: tesla_lower_coil2 1
+    3300068: tesla_lower_coil2 2
+    3300070: tesla_lower_coil2 3
+    3300072: tesla_lower_coil3
+    3300074: tesla_lower_coil3 1
+    3300076: tesla_lower_coil3 2
+    3300078: tesla_lower_coil3 3
+    3300080: tesla_main
+    3300082: tesla_main 1
+    3300084: tesla_main 2
+    3300086: tesla_main 3
+    3300088: tesla_rod
+    3300090: tesla_rod 1
+    3300092: tesla_rod 2
+    3300094: tesla_rod 3
+    3300096: testla_base
+    3300098: testla_base1
+    3300100: testla_base2
+    3300102: testla_base3
+    3300104: turrent_back
+    3300106: turrent_back 1
+    3300108: turrent_barrel_1
+    3300110: turrent_barrel_1 1
+    3300112: turrent_barrel_base
+    3300114: turrent_barrel_base 1
+    3300116: Turrent_base
+    3300118: Turrent_base1
+    3300120: turrent_lower
+    3300122: turrent_lower 1
+    3300124: turrent_lower_base
+    3300126: turrent_lower_base 1
+    3300128: turrent_muzzle
+    3300130: turrent_muzzle 1
+    3300132: turrent_ring
+    3300134: turrent_ring 1
+    3300136: turrent_shaft
+    3300138: turrent_shaft 1
+    3300140: payload_bottom_center
+    3300142: payload_centerpart
+    3300144: payload_mid_center
+    3300146: payload_middle
+    3300148: testla_base1_tesla_lower_coil
+    3300150: testla_base2_tesla_rod
+    3300152: testla_base3_tesla_rod
+    3300154: testla_base_tesla_rod
+    4300000: payload_foundation_panel2
+    4300002: payload_foundation_panel1
+    4300004: Turrent_base
+    4300006: turrent_lower
+    4300008: payload1:Cylinder005
+    4300010: turrent_ring
+    4300012: turrent_shaft
+    4300014: turrent_lower_base
+    4300016: turrent_back
+    4300018: turrent_barrel_base
+    4300020: turrent_barrel_1
+    4300022: turrent_muzzle
+    4300024: payload_foundation
+    4300026: Turrent_base1
+    4300028: turrent_lower
+    4300030: Cylinder005
+    4300032: turrent_ring
+    4300034: turrent_shaft
+    4300036: turrent_lower_base
+    4300038: turrent_back
+    4300040: turrent_barrel_base
+    4300042: turrent_barrel_1
+    4300044: turrent_muzzle
+    4300046: payload_gravity_wheel1
+    4300048: Sphere001
+    4300050: payload_gravity_wheel2
+    4300052: Sphere001
+    4300054: payload_gravity_wheel3
+    4300056: Sphere001
+    4300058: payload_gravity_wheel4
+    4300060: Sphere001
+    4300062: testla_base1
+    4300064: tesla_rod
+    4300066: tesla_main
+    4300068: tesla_lower_coil2
+    4300070: tesla_arm
+    4300072: tesla_lower_coil3
+    4300074: tesla_lower_coil
+    4300076: payload_panel_shaft2
+    4300078: testla_base
+    4300080: tesla_rod
+    4300082: tesla_main
+    4300084: tesla_lower_coil2
+    4300086: tesla_arm
+    4300088: tesla_lower_coil3
+    4300090: tesla_lower_coil
+    4300092: testla_base3
+    4300094: tesla_rod
+    4300096: tesla_main
+    4300098: tesla_lower_coil2
+    4300100: tesla_arm
+    4300102: tesla_lower_coil3
+    4300104: tesla_lower_coil
+    4300106: testla_base2
+    4300108: tesla_rod
+    4300110: tesla_main
+    4300112: tesla_lower_coil2
+    4300114: tesla_arm
+    4300116: tesla_lower_coil3
+    4300118: tesla_lower_coil
+    4300120: Payload_rotator
+    4300122: payload_2:Cylinder004
+    4300124: payload_2:Box013
+    4300126: payload_2:Cylinder003
+    4300128: payload_2:Object005
+    4300130: payload_tip
+    4300132: payload_shaft
+    4300134: payload_panel_top
+    4300136: payload_panel_top2
+    4300138: payload_shaft_panel
+    4300140: payload_centerpart
+    4300142: payload_middle
+    4300144: payload_bottom_center
+    4300146: payload_mid_center
+    4300148: testla_base1_tesla_lower_coil
+    4300150: testla_base_tesla_rod
+    4300152: testla_base3_tesla_rod
+    4300154: testla_base2_tesla_rod
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
