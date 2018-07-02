@@ -21,8 +21,6 @@ public class TransformRotation : MonoBehaviour {
         //Quaternion target = Quaternion.Euler(TiltAroundY, 0, TiltAroundZ);
         //transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
         transform.forward = Camera.main.transform.forward;
-        
-
-
+        transform.rotation = new Quaternion(0,transform.rotation.y,0, transform.rotation.w);
     }
 }
