@@ -10,20 +10,14 @@ public class PathSriptable : ScriptableObject
     public void SetNodes()
     {
         if(Nodes.Count == Steps.Count)
-            return;
-        foreach (var step in Steps)
-        {
-            GameObject newObj = new GameObject();
-            newObj.transform.position = step;
-            Nodes.Add(newObj);
-        }
+            return;        
     }
 
     public void UpdatePositions()
     {
-        for (int i = 0; i < Nodes.Count; i++)
+        foreach (var node in Nodes)
         {
-            Steps[i] = Nodes[i].transform.position;
+            Steps[Nodes.IndexOf(node)] = node.transform.position;
         }
     }
 }

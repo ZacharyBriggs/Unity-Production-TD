@@ -4,24 +4,45 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class EnemyBehaviour : MonoBehaviour
-{    
+{
+    public int Health;
+    public int Damage;
     private GameObject Target;
+    public HealthScriptable HealthScriptable;
 
-    public int HP;
-	// Use this for initialization
-	void Start ()
-	{
-	    Target = GameObject.Find("Payload");
-	    
-	}
-	
-	// Update is called once per frame
-	void Update ()
-	{
-	    GetComponent<NavMeshAgent>().destination = Target.transform.position;
-	    if (HP <= 0)
-	    {
-            Destroy(this.gameObject);
-	    }
+    // Use this for initialization
+    void Start()
+    {
+        HealthScriptable.Health = this.Health;
+        Target = FindObjectOfType<PayloadBehaviour>().gameObject;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        GetComponent<NavMeshAgent>().destination = Target.transform.position;
+        this.Health = HealthScriptable.Health;
+    }
+
+    void Attack(GameObject other)
+    {
+        //Play attack animation
+        HealthScriptable target = other.GetComponent<HealthScriptable>();
+        if (target.TakeDamage(Damage))
+        {
+            other.GetComponent<PayloadBehaviour>().Die();
+        }
+
+    }
+    public void Die()
+    {
+        //isdead = true;
+        Destroy(this.gameObject);
+    }
+
+    void OnCollisionEnter(Collision collider)
+    {
+        if(collider.gameObject.tag == "Payload" || collider.gameObject.tag == "Player")
+            Attack(collider.gameObject);
     }
 }

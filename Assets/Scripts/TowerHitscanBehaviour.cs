@@ -9,7 +9,7 @@ public class TowerHitscanBehaviour : MonoBehaviour
     private GameObject Target;
 
     public float Cooldown;
-
+    public int Damage;
     private float Timer;
 
 	// Use this for initialization
@@ -26,7 +26,8 @@ public class TowerHitscanBehaviour : MonoBehaviour
 	        EnemyBehaviour enemy = Target.GetComponent<EnemyBehaviour>();
 	        if (Timer <= 0)
 	        {
-	            enemy.HP -= 10;
+	            if(enemy.GetComponent<EnemyBehaviour>().HealthScriptable.TakeDamage(Damage))
+                    enemy.Die();
 	            Timer = Cooldown;
 	        }
 
