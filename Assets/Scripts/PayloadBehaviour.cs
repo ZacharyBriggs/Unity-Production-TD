@@ -40,7 +40,7 @@ public class PayloadBehaviour : MonoBehaviour
         Agent.destination = Path.Steps[NextNode];
     }
 
-    void OnDrawGizmos()
+    void OnEnable()
     {
         Path.SetNodes();
         foreach (var step in Path.Steps)
