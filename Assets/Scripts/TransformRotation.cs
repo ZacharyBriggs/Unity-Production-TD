@@ -9,17 +9,20 @@ public class TransformRotation : MonoBehaviour {
 		
 	}
 
-    private float smooth = 5.0f;
+    private float smooth = 10.0f;
 
-    private float TiltAngle = 60.0f;
+    private float TiltAngle = 90.0f;
 
-	// Update is called once per frame
-	void Update ()
-	{
-        float TiltAroundZ = Input.GetAxis("Horizontal") * TiltAngle;
-	    float TiltAroundX = Input.GetAxis("Vertical") * TiltAngle;
-        Quaternion target =Quaternion.Euler(TiltAroundX,0,TiltAroundZ);
-        transform.rotation=Quaternion.Slerp(transform.rotation,target,Time.deltaTime * smooth);
+    // Update is called once per frame
+    void Update ()
+    {
+        //float TiltAroundZ = Input.GetAxis("Horizontal") * TiltAngle;
+        //float TiltAroundY = Input.GetAxis("Vertical") * TiltAngle;
+        //Quaternion target = Quaternion.Euler(TiltAroundY, 0, TiltAroundZ);
+        //transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
+        transform.forward = Camera.main.transform.forward;
+        
+
 
     }
 }
