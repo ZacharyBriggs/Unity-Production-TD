@@ -26,11 +26,12 @@ public class EnemyBehaviour : MonoBehaviour
 
     void Attack(GameObject other)
     {
-        //Play attack animation
-        HealthScriptable target = other.GetComponent<HealthScriptable>();
-        if (target.TakeDamage(Damage))
+        if (other.tag == "Payload")
         {
-            other.GetComponent<PayloadBehaviour>().Die();
+            //Play attack animation
+            PayloadBehaviour target = other.GetComponent<PayloadBehaviour>();
+            if (target.HealthScriptable.TakeDamage(Damage))
+                other.GetComponent<PayloadBehaviour>().Die();
         }
 
     }

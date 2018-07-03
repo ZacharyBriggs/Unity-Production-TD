@@ -9,13 +9,11 @@ public class PayloadBehaviour : MonoBehaviour
     public int Health;
     public HealthScriptable HealthScriptable;
     public PathSriptable Path;
-    public float Range;
 
     private int CurrentNode = 0;
     private int NextNode = 1;
     private NavMeshAgent Agent;
     private NavMeshAgent Payload;
-    private SphereCollider Sphere;
     
     // Use this for initialization
     void Start()
@@ -25,8 +23,6 @@ public class PayloadBehaviour : MonoBehaviour
         Agent = GetComponent<NavMeshAgent>();
         Agent.destination = Path.Steps[NextNode];
         Payload = GetComponent<NavMeshAgent>();
-        Sphere = GetComponent<SphereCollider>();
-        Sphere.radius = Range;
         foreach (var node in Path.Nodes)
         {
             node.GetComponent<MeshRenderer>().enabled = false;
