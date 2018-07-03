@@ -11,38 +11,48 @@ public class MachineGunBehaviour : MonoBehaviour
     public float Range;
 
     private float Timer;
-    private GameObject Target;
-    private SphereCollider Sphere;
+    private EnemyBehaviour Target;
+    private List<EnemyBehaviour> Enemies = new List<EnemyBehaviour>();
+    [SerializeField]
+    private float Distance;
 
     // Use this for initialization
     void Start ()
 	{
 	    Timer = Cooldown;
-	    Sphere = GetComponent<SphereCollider>();
-	    Sphere.radius = Range;
-    }
+	    var foundEnemies = FindObjectsOfType<EnemyBehaviour>();
+	    foreach (var enemy in foundEnemies)
+	    {
+	        Enemies.Add(enemy);
+	    }
+	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
+	    foreach (var enemy in Enemies)
+	    {
+	        var distanceFrom = Vector3.Distance(transform.position, enemy.transform.position);
+	        if (distanceFrom < Range)
+	        {
+                if(Target == null)
+	                Target = enemy;
+                else if (distanceFrom < Vector3.Distance(transform.position, Target.transform.position))
+                    Target = enemy;
+	        }
+	    }
         if (Target != null)
 	    {
-	        EnemyBehaviour enemy = Target.GetComponent<EnemyBehaviour>();
 	        if (Timer <= 0)
 	        {
-                Debug.DrawLine(this.transform.position,Target.transform.position,Color.red,0.1f);
-	            if(enemy.GetComponent<EnemyBehaviour>().HealthScriptable.TakeDamage(Damage))
-                    enemy.Die();
-	            Timer = Cooldown;
+	            if (Vector3.Dot(transform.forward, (Target.transform.position - transform.position).normalized) < 90)
+	            {
+	                Debug.DrawLine(this.transform.position, Target.transform.position, Color.red, 0.1f);
+	                Target.TakeDamage(Damage);
+	                Timer = Cooldown;
+	            }
 	        }
-
 	        Timer -= Time.deltaTime;
 	    }
 	}
-
-    void OnTriggerStay(Collider collision)
-    {
-        if (collision.gameObject.tag == "Enemy" && Target == null)
-            Target = collision.gameObject;
-    }
 }

@@ -8,12 +8,13 @@ public class EnemyBehaviour : MonoBehaviour
     public int Health;
     public int Damage;
     private GameObject Target;
-    public HealthScriptable HealthScriptable;
+    protected HealthScriptable HealthScript;
 
     // Use this for initialization
     void Start()
     {
-        HealthScriptable.Health = this.Health;
+        HealthScript = ScriptableObject.CreateInstance<HealthScriptable>();
+        HealthScript.Health = this.Health;
         Target = FindObjectOfType<PayloadBehaviour>().gameObject;
     }
 
@@ -21,24 +22,20 @@ public class EnemyBehaviour : MonoBehaviour
     void Update()
     {
         GetComponent<NavMeshAgent>().destination = Target.transform.position;
-        this.Health = HealthScriptable.Health;
+        this.Health = HealthScript.Health;
     }
 
+    public void TakeDamage(int amount)
+    {
+        HealthScript.TakeDamage(amount);
+        if (HealthScript.Health <= 0)
+            Destroy(this.gameObject);
+    }
     void Attack(GameObject other)
     {
-        if (other.tag == "Payload")
-        {
             //Play attack animation
-            PayloadBehaviour target = other.GetComponent<PayloadBehaviour>();
-            if (target.HealthScriptable.TakeDamage(Damage))
-                other.GetComponent<PayloadBehaviour>().Die();
-        }
-
-    }
-    public void Die()
-    {
-        //isdead = true;
-        Destroy(this.gameObject);
+            var target = other.GetComponent<PayloadBehaviour>();
+            target.TakeDamage(Damage);
     }
 
     void OnCollisionEnter(Collision collider)

@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class PayloadBehaviour : MonoBehaviour
 {
     public int Health;
-    public HealthScriptable HealthScriptable;
+    private HealthScriptable HealthScript;
     public PathSriptable Path;
 
     private int CurrentNode = 0;
@@ -18,23 +18,22 @@ public class PayloadBehaviour : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        HealthScriptable.Health = this.Health;
+        HealthScript = ScriptableObject.CreateInstance<HealthScriptable>();
+        HealthScript.Health = this.Health;
         this.transform.position = Path.Steps[CurrentNode];
         Agent = GetComponent<NavMeshAgent>();
         Agent.destination = Path.Steps[NextNode];
         Payload = GetComponent<NavMeshAgent>();
-        foreach (var node in Path.Nodes)
-        {
-            node.GetComponent<MeshRenderer>().enabled = false;
-        }
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        this.Health = HealthScriptable.Health;
+        this.Health = HealthScript.Health;
         Payload.speed = 0;
+        if(Path == null)
+            return;
         if (this.transform.position.x == Path.Steps[NextNode].x && this.transform.position.z == Path.Steps[NextNode].z && CurrentNode + 2 < Path.Steps.Count)
             ChangeDestination();
         else if (this.transform.position.x == Path.Steps[Path.Steps.Count - 1].x &&
@@ -45,7 +44,7 @@ public class PayloadBehaviour : MonoBehaviour
 #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            this.Die();
+            this.TakeDamage(99999999);
         }
 #endif
     }
@@ -57,28 +56,16 @@ public class PayloadBehaviour : MonoBehaviour
         Agent.destination = Path.Steps[NextNode];
     }
 
+    public void TakeDamage(int amount)
+    {
+        HealthScript.TakeDamage(amount);
+        if (HealthScript.Health <= 0)
+            Destroy(this.gameObject);
+    }
     void Win()
     {
         Debug.Log("You Win!!!!");
         SceneManager.LoadScene("mainmenu");
-    }
-
-    public void Die()
-    {
-        //isdead = true
-        SceneManager.LoadScene("mainmenu");
-        Destroy(this.gameObject);
-    }
-    [ContextMenu("Set Up Nodes")]
-    void SetUpNodes()
-    {
-        Path.SetNodes();
-        foreach (var step in Path.Steps)
-        {
-            var obj = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            obj.transform.position = step;
-            Path.Nodes.Add(obj);
-        }
     }
 
     void OnTriggerStay(Collider collision)
@@ -86,14 +73,4 @@ public class PayloadBehaviour : MonoBehaviour
         if (collision.gameObject.tag == "Player")
             Payload.speed = 3;
     }
-
-    void OnDrawGizmos()
-    {
-        while (Path.Nodes.Count < Path.Steps.Count)
-        {
-            Path.Nodes.Remove(Path.Nodes[Path.Nodes.Count - 1]);
-        }
-        Path.UpdatePositions();
-    }
-
 }
