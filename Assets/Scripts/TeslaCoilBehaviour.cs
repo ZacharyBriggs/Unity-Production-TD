@@ -26,11 +26,23 @@ public class TeslaCoilBehaviour : MonoBehaviour
 	
 	void Update ()
 	{
+
 	    foreach (var bolt in Bolts)
-        { 
-	        if (bolt.Target == null)
-	            Bolts.Remove(bolt);
-	    }
+        {
+            if (bolt.Target == null)
+            {
+                Bolts.Remove(bolt);
+            }
+
+            var distanceFrom = Vector3.Distance(bolt.Target.transform.position, this.transform.position);
+            var test =
+                Vector3.Dot(transform.forward, (bolt.Target.transform.position - transform.position));
+            if (distanceFrom > Range || Vector3.Dot(transform.forward, (bolt.Target.transform.position - transform.position)) < 0)
+            {
+                Bolts.Remove(bolt);
+            }
+
+        }
         foreach (var enemy in Enemies)
 	    {
 	        if (enemy == null)
@@ -42,7 +54,7 @@ public class TeslaCoilBehaviour : MonoBehaviour
 	        var distanceFrom = Vector3.Distance(transform.position, enemy.transform.position);
 	        if (distanceFrom < Range && Timer <= 0)
 	        {
-	            if (Vector3.Dot(transform.forward, (enemy.transform.position - transform.position).normalized) < 90)
+	            if (Vector3.Dot(transform.forward, (enemy.transform.position - transform.position)) > 0)
 	            {
 	                bool enemyNotTargeted = true;
 	                foreach (var bolt in Bolts)

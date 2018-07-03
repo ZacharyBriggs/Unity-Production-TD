@@ -45,7 +45,7 @@ public class MachineGunBehaviour : MonoBehaviour
 	    {
 	        if (Timer <= 0)
 	        {
-	            if (Vector3.Dot(transform.forward, (Target.transform.position - transform.position).normalized) < 90)
+	            if (Vector3.Dot(transform.forward, Target.transform.position - transform.position) > 0)
 	            {
 	                Debug.DrawLine(this.transform.position, Target.transform.position, Color.red, 0.1f);
 	                Target.TakeDamage(Damage);
