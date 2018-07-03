@@ -2,16 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TransFormLocalRotation : MonoBehaviour {
-
+public class CrossHairBehaviour 
+{
+    
+    public Vector2 crosshairnormposition;
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+	{
+
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		transform.localRotation=Quaternion.identity;
-	    ;
-	}
+	void Update ()
+	{
+	    
+   
+    }
 }
