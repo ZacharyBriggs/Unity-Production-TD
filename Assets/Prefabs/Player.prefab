@@ -1089,6 +1089,8 @@ GameObject:
   - component: {fileID: 95217630374337036}
   - component: {fileID: 143103036724211870}
   - component: {fileID: 114155477453340588}
+  - component: {fileID: 114999035596724076}
+  - component: {fileID: 114960095066249490}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1959,7 +1961,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1896820851845428}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 174.3, y: 0, z: 125.76}
+  m_LocalPosition: {x: 174.3, y: 0, z: 125.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4714200690064002}
@@ -2280,6 +2282,31 @@ MonoBehaviour:
   InputVector: {x: 0, y: 0, z: 0}
   camRight: {x: 0, y: 0, z: 0}
   camForward: {x: 0, y: 0, z: 0}
+--- !u!114 &114960095066249490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1896820851845428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 048868e05fd5cee4bb84f06847e03ed6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114999035596724076
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1896820851845428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49c6f7b9819b5d548a88061fe6c44727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cooldown: 1
+  Damage: 10
+  Range: 30
 --- !u!137 &137012914837262288
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
