@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TransformRotation : MonoBehaviour {
+public class TransformRotationBehaviour : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

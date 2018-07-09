@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b012b11c75c9948ae1c322acd37390, type: 3}
   m_Name: New Health Scriptable
   m_EditorClassIdentifier: 
-  Health: 0
+  Health: 100
