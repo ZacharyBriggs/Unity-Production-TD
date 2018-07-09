@@ -6,6 +6,7 @@ TagManager:
   tags:
   - HealthBar
   - CrossHair
+  - WaveProgessBar
   layers:
   - Default
   - TransparentFX
