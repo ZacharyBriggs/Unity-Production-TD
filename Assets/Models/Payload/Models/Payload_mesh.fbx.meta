@@ -87,6 +87,47 @@ ModelImporter:
     100158: testla_base2_tesla_rod
     100160: testla_base3_tesla_rod
     100162: testla_base_tesla_rod
+    100164: payload_all_grp
+    100166: payload_base_jnt
+    100168: payload_lower_panel_l_jnt
+    100170: payload_lower_panel_r_jnt
+    100172: payload_mid_jnt
+    100174: payload_panel_mid_l_jnt
+    100176: payload_panel_mid_r_jnt
+    100178: payload_panel_top_l_jnt
+    100180: payload_panel_top_r_jnt
+    100182: payload_rod_mid_1_l_jnt
+    100184: payload_rod_mid_1_r_jnt
+    100186: payload_rod_mid_2_l_jnt
+    100188: payload_rod_mid_2_r_jnt
+    100190: payload_rod_mid_3_l_jnt
+    100192: payload_rod_mid_3_r_jnt
+    100194: payload_rod_top_1_l_jnt
+    100196: payload_rod_top_1_r_jnt
+    100198: payload_rod_top_2_l_jnt
+    100200: payload_rod_top_2_r_jnt
+    100202: payload_rod_top_3_l_jnt1
+    100204: payload_rod_top_3_r_jnt
+    100206: payload_root_jnt
+    100208: payload_shaft_panel2
+    100210: payload_top_jnt
+    100212: payload_tower_jnt
+    100214: payload_turrent_1_l_jnt
+    100216: payload_turrent_1_r_jnt1
+    100218: payload_turrent_3_l_jnt
+    100220: payload_turrent_3_r_jnt
+    100222: turrent_ring1
+    100224: payload_lower_panel_r_jnt1
+    100226: payload_panel_mid_r_jnt1
+    100228: payload_rod_mid_1_r_jnt1
+    100230: payload_rod_mid_2_r_jnt1
+    100232: payload_rod_mid_3_r_jnt1
+    100234: payload_rod_top_1_r_jnt1
+    100236: payload_rod_top_2_r_jnt1
+    100238: payload_rod_top_3_l_jnt2
+    100240: payload_rod_top_3_r_jnt1
+    100242: payload_turrent_1_r_jnt2
+    100244: payload_turrent_3_r_jnt1
     400000: Cylinder005
     400002: payload1:Cylinder005
     400004: payload_2:Box013
@@ -169,6 +210,47 @@ ModelImporter:
     400158: testla_base2_tesla_rod
     400160: testla_base3_tesla_rod
     400162: testla_base_tesla_rod
+    400164: payload_all_grp
+    400166: payload_base_jnt
+    400168: payload_lower_panel_l_jnt
+    400170: payload_lower_panel_r_jnt
+    400172: payload_mid_jnt
+    400174: payload_panel_mid_l_jnt
+    400176: payload_panel_mid_r_jnt
+    400178: payload_panel_top_l_jnt
+    400180: payload_panel_top_r_jnt
+    400182: payload_rod_mid_1_l_jnt
+    400184: payload_rod_mid_1_r_jnt
+    400186: payload_rod_mid_2_l_jnt
+    400188: payload_rod_mid_2_r_jnt
+    400190: payload_rod_mid_3_l_jnt
+    400192: payload_rod_mid_3_r_jnt
+    400194: payload_rod_top_1_l_jnt
+    400196: payload_rod_top_1_r_jnt
+    400198: payload_rod_top_2_l_jnt
+    400200: payload_rod_top_2_r_jnt
+    400202: payload_rod_top_3_l_jnt1
+    400204: payload_rod_top_3_r_jnt
+    400206: payload_root_jnt
+    400208: payload_shaft_panel2
+    400210: payload_top_jnt
+    400212: payload_tower_jnt
+    400214: payload_turrent_1_l_jnt
+    400216: payload_turrent_1_r_jnt1
+    400218: payload_turrent_3_l_jnt
+    400220: payload_turrent_3_r_jnt
+    400222: turrent_ring1
+    400224: payload_lower_panel_r_jnt1
+    400226: payload_panel_mid_r_jnt1
+    400228: payload_rod_mid_1_r_jnt1
+    400230: payload_rod_mid_2_r_jnt1
+    400232: payload_rod_mid_3_r_jnt1
+    400234: payload_rod_top_1_r_jnt1
+    400236: payload_rod_top_2_r_jnt1
+    400238: payload_rod_top_3_l_jnt2
+    400240: payload_rod_top_3_r_jnt1
+    400242: payload_turrent_1_r_jnt2
+    400244: payload_turrent_3_r_jnt1
     2100000: StingrayPBS1
     2300000: Cylinder005
     2300002: payload1:Cylinder005
@@ -404,7 +486,75 @@ ModelImporter:
     4300150: testla_base_tesla_rod
     4300152: testla_base3_tesla_rod
     4300154: testla_base2_tesla_rod
+    4300156: turrent_ring1
+    4300158: payload_shaft_panel2
     9500000: //RootNode
+    13700000: payload_2:Box013
+    13700002: payload_2:Cylinder003
+    13700004: payload_2:Cylinder004
+    13700006: payload_2:Object005
+    13700008: payload_foundation
+    13700010: payload_foundation_panel1
+    13700012: payload_foundation_panel2
+    13700014: payload_gravity_wheel1
+    13700016: payload_gravity_wheel2
+    13700018: payload_gravity_wheel3
+    13700020: payload_gravity_wheel4
+    13700022: payload_panel_top
+    13700024: payload_panel_top2
+    13700026: Payload_rotator
+    13700028: payload_shaft
+    13700030: payload_shaft_panel
+    13700032: payload_shaft_panel2
+    13700034: payload_tip
+    13700036: Sphere001
+    13700038: Sphere001 1
+    13700040: Sphere001 2
+    13700042: Sphere001 3
+    13700044: tesla_arm
+    13700046: tesla_arm 1
+    13700048: tesla_arm 2
+    13700050: tesla_arm 3
+    13700052: tesla_lower_coil
+    13700054: tesla_lower_coil 1
+    13700056: tesla_lower_coil 2
+    13700058: tesla_lower_coil 3
+    13700060: tesla_lower_coil2
+    13700062: tesla_lower_coil2 1
+    13700064: tesla_lower_coil2 2
+    13700066: tesla_lower_coil2 3
+    13700068: tesla_lower_coil3
+    13700070: tesla_lower_coil3 1
+    13700072: tesla_lower_coil3 2
+    13700074: tesla_lower_coil3 3
+    13700076: tesla_main
+    13700078: tesla_main 1
+    13700080: tesla_main 2
+    13700082: tesla_main 3
+    13700084: tesla_rod
+    13700086: tesla_rod 1
+    13700088: tesla_rod 2
+    13700090: tesla_rod 3
+    13700092: testla_base
+    13700094: testla_base1
+    13700096: testla_base2
+    13700098: testla_base3
+    13700100: turrent_back
+    13700102: turrent_back 1
+    13700104: turrent_barrel_1
+    13700106: turrent_barrel_1 1
+    13700108: turrent_barrel_base
+    13700110: turrent_barrel_base 1
+    13700112: Turrent_base
+    13700114: Turrent_base1
+    13700116: turrent_lower_base
+    13700118: turrent_lower_base 1
+    13700120: turrent_muzzle
+    13700122: turrent_muzzle 1
+    13700124: turrent_ring
+    13700126: turrent_ring1
+    13700128: turrent_shaft
+    13700130: turrent_shaft 1
   externalObjects: {}
   materials:
     importMaterials: 0
