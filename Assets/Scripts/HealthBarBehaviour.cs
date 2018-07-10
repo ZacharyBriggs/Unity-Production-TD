@@ -17,7 +17,7 @@ public class HealthBarBehaviour :MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PayloadBehaviour pb = Payload.GetComponent<PayloadBehaviour>();
+        HealthScriptable pb = Payload.GetComponent<HealthScriptable>();
         HealthText.text = pb.HP.ToString();
         float value = pb.HP / 100;
        HealthUI.fillAmount = value;
