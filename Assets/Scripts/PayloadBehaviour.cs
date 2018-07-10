@@ -12,7 +12,6 @@ public class PayloadBehaviour : MonoBehaviour
 
     private int CurrentNode = 0;
     private int NextNode = 1;
-    private NavMeshAgent Agent;
     private NavMeshAgent Payload;
     
     // Use this for initialization
@@ -20,11 +19,9 @@ public class PayloadBehaviour : MonoBehaviour
     {
         HealthScript = ScriptableObject.CreateInstance<HealthScriptable>();
         HealthScript.Health = this.Health;
-        this.transform.position = Path.Steps[CurrentNode];
-        Agent = GetComponent<NavMeshAgent>();
-        Agent.destination = Path.Steps[NextNode];
+        this.transform.position = Path.Steps[0];
         Payload = GetComponent<NavMeshAgent>();
-        
+        Payload.destination = Path.Steps[1];
     }
 
     // Update is called once per frame
@@ -53,7 +50,7 @@ public class PayloadBehaviour : MonoBehaviour
     {
         CurrentNode = NextNode;
         NextNode += 1;
-        Agent.destination = Path.Steps[NextNode];
+        Payload.destination = Path.Steps[NextNode];
     }
 
     public void TakeDamage(int amount)

@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbbfbde09af600f418c6f8caded1d87d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 2147483647
+  Health: 100
   Damage: 1
 --- !u!135 &135082247394461160
 SphereCollider:

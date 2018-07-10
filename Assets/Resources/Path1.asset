@@ -12,14 +12,5 @@ MonoBehaviour:
   m_Name: Path1
   m_EditorClassIdentifier: 
   Steps:
-  - {x: 4.42, y: 1, z: -0.74}
-  - {x: 14.90984, y: 1, z: -0.77}
-  - {x: -4.98, y: 1.2, z: 5.52}
-  - {x: 7.38, y: 1, z: 17.15}
-  - {x: -18.56, y: 1, z: 15.36}
-  Nodes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {x: 362.9, y: 1, z: 334.6}
+  - {x: 318.9, y: 1, z: 329.9}
