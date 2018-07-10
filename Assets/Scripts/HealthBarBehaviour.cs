@@ -3,28 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthBarBehaviour :HealthScriptable  
+public class HealthBarBehaviour :MonoBehaviour
 {
-
-    private Slider HealthBar;
-
-    void OnValueChanged(HealthScriptable healthBar)
+    public Image HealthUI;
+    public Text HealthText;
+    private GameObject Payload;
+    // Use this for initialization
+    void Start()
     {
-        if (HealthBar.value > 0)
-        {
-           HealthBar.value = -10;
-        }
+        Payload = GameObject.Find("Payload");
     }
-	// Use this for initialization
-	void Start ()
-	{
-	    HealthBar.value = Health;
 
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		TakeDamage(Health);
-        
-	}
+    // Update is called once per frame
+    void Update()
+    {
+        PayloadBehaviour pb = Payload.GetComponent<PayloadBehaviour>();
+        HealthText.text = pb.HP.ToString();
+        float value = pb.HP / 100;
+       HealthUI.fillAmount = value;
+    }
+
 }
