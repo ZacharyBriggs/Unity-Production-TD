@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class EnemyBehaviour : MonoBehaviour
 {
+    public int MaxHealth;
     public int Health;
     public int Damage;
     private GameObject Target;
@@ -13,8 +14,9 @@ public class EnemyBehaviour : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        Health = MaxHealth;
         HealthScript = ScriptableObject.CreateInstance<HealthScriptable>();
-        HealthScript.Health = this.Health;
+        HealthScript.Health = this.MaxHealth;
         Target = FindObjectOfType<PayloadBehaviour>().gameObject;
     }
 

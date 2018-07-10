@@ -28,6 +28,7 @@ TextureImporter:
     21300042: UI_SpreadSheet_21
     21300044: UI_SpreadSheet_22
     21300046: UI_SpreadSheet_23
+    21300048: UI_SpreadSheet_24
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -361,6 +362,20 @@ TextureImporter:
       name: UI_SpreadSheet_16
       rect:
         serializedVersion: 2
+        x: 63
+        y: 642
+        width: 385
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UI_SpreadSheet_17
+      rect:
+        serializedVersion: 2
         x: 507
         y: 675
         width: 85
@@ -372,7 +387,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: UI_SpreadSheet_17
+      name: UI_SpreadSheet_18
       rect:
         serializedVersion: 2
         x: 107
@@ -386,7 +401,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: UI_SpreadSheet_18
+      name: UI_SpreadSheet_19
       rect:
         serializedVersion: 2
         x: 448
@@ -400,7 +415,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: UI_SpreadSheet_19
+      name: UI_SpreadSheet_20
       rect:
         serializedVersion: 2
         x: 567
@@ -414,7 +429,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: UI_SpreadSheet_20
+      name: UI_SpreadSheet_21
       rect:
         serializedVersion: 2
         x: 649
@@ -428,7 +443,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: UI_SpreadSheet_21
+      name: UI_SpreadSheet_22
       rect:
         serializedVersion: 2
         x: 1008
@@ -442,7 +457,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: UI_SpreadSheet_22
+      name: UI_SpreadSheet_23
       rect:
         serializedVersion: 2
         x: 16
@@ -456,7 +471,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: UI_SpreadSheet_23
+      name: UI_SpreadSheet_24
       rect:
         serializedVersion: 2
         x: 13
