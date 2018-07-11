@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Remoting.Messaging;
 using UnityEngine;
 
 public class PlayerMovementBehaviour : MonoBehaviour
 {
     public float Speed = 10;
+    public float WalkSpeed = 2;
+    public float RunSpeed = 4;
     public Vector3 InputVector;
     private Animator animation;
     private CharacterController controller;
@@ -23,16 +26,13 @@ public class PlayerMovementBehaviour : MonoBehaviour
     {
         camRight = Camera.main.transform.right;
         camForward = Camera.main.transform.forward;
-        var h = Input.GetAxis("Horizontal");
-        var v = Input.GetAxis("Vertical");
-        if (Input.GetAxis("Horizontal") > 0 || Input.GetAxis("Vertical") > 0)
-            animation.SetBool("IsWalking",true);
-        else
-            animation.SetBool("IsWalking",false);
-        InputVector = new Vector3(h,0,v);
-        camForward *= InputVector.z;
-        camRight *= InputVector.x;
+        bool walking = PlayerInput.InputVector.magnitude > 0;
+        if (walking)
+            Speed = PlayerInput.Sprint() ? RunSpeed : WalkSpeed;
+        animation.SetBool("IsWalking", walking);
+        camForward *= PlayerInput.InputVector.z;
+        camRight *= PlayerInput.InputVector.x;
         Vector3 moveVector = (camForward + camRight);
-        controller.SimpleMove(moveVector.normalized*Speed);
+        controller.SimpleMove(moveVector.normalized * Speed);
     }
 }
