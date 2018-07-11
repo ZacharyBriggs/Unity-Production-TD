@@ -1,48 +1,48 @@
 fileFormatVersion: 2
-guid: ad6a495ca89ef054cadce5c8d84b5235
-timeCreated: 1531158367
+guid: 946b649d96c10dd4083812e053688f91
+timeCreated: 1531167553
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Gun_Mesh
-    100002: //RootNode
-    100004: Proxi_Hair_AuxSHJnt
-    100006: Proxi_HairString_01_01SHJnt
-    100008: Proxi_HairString_01_02SHJnt
-    100010: Proxi_Head_JawEndSHJnt
-    100012: Proxi_Head_JawSHJnt
-    100014: Proxi_Head_TopSHJnt
-    100016: Proxi_l_Arm_ClavicleSHJnt
-    100018: Proxi_l_Arm_ElbowSHJnt
-    100020: Proxi_l_Arm_ShoulderSHJnt
-    100022: Proxi_l_Arm_WristSHJnt
-    100024: Proxi_l_Eye_01SHJnt
-    100026: Proxi_l_Finger_01_01SHJnt
-    100028: Proxi_l_Finger_01_02SHJnt
-    100030: Proxi_l_Finger_01_03SHJnt
-    100032: Proxi_l_Finger_01_04SHJnt
-    100034: Proxi_l_Finger_02_01SHJnt
-    100036: Proxi_l_Finger_02_02SHJnt
-    100038: Proxi_l_Finger_02_03SHJnt
-    100040: Proxi_l_Finger_02_04SHJnt
-    100042: Proxi_l_Finger_03_01SHJnt
-    100044: Proxi_l_Finger_03_02SHJnt
-    100046: Proxi_l_Finger_03_03SHJnt
-    100048: Proxi_l_Finger_03_04SHJnt
-    100050: Proxi_l_Finger_04_01SHJnt
-    100052: Proxi_l_Finger_04_02SHJnt
-    100054: Proxi_l_Finger_04_03SHJnt
-    100056: Proxi_l_Finger_04_04SHJnt
-    100058: Proxi_l_Leg_AnkleSHJnt
-    100060: Proxi_l_Leg_BallSHJnt
-    100062: Proxi_l_Leg_HipSHJnt
-    100064: Proxi_l_Leg_KneeSHJnt
-    100066: Proxi_l_Leg_ToeSHJnt
-    100068: Proxi_l_Thumb_01_01SHJnt
-    100070: Proxi_l_Thumb_01_02SHJnt
-    100072: Proxi_l_Thumb_01_03SHJnt
-    100074: Proxi_Mesh
+    100000: CharacterModel_LowPoly_Body:Group45620
+    100002: Gun_Mesh
+    100004: //RootNode
+    100006: Proxi_Hair_AuxSHJnt
+    100008: Proxi_HairString_01_01SHJnt
+    100010: Proxi_HairString_01_02SHJnt
+    100012: Proxi_Head_JawEndSHJnt
+    100014: Proxi_Head_JawSHJnt
+    100016: Proxi_Head_TopSHJnt
+    100018: Proxi_l_Arm_ClavicleSHJnt
+    100020: Proxi_l_Arm_ElbowSHJnt
+    100022: Proxi_l_Arm_ShoulderSHJnt
+    100024: Proxi_l_Arm_WristSHJnt
+    100026: Proxi_l_Eye_01SHJnt
+    100028: Proxi_l_Finger_01_01SHJnt
+    100030: Proxi_l_Finger_01_02SHJnt
+    100032: Proxi_l_Finger_01_03SHJnt
+    100034: Proxi_l_Finger_01_04SHJnt
+    100036: Proxi_l_Finger_02_01SHJnt
+    100038: Proxi_l_Finger_02_02SHJnt
+    100040: Proxi_l_Finger_02_03SHJnt
+    100042: Proxi_l_Finger_02_04SHJnt
+    100044: Proxi_l_Finger_03_01SHJnt
+    100046: Proxi_l_Finger_03_02SHJnt
+    100048: Proxi_l_Finger_03_03SHJnt
+    100050: Proxi_l_Finger_03_04SHJnt
+    100052: Proxi_l_Finger_04_01SHJnt
+    100054: Proxi_l_Finger_04_02SHJnt
+    100056: Proxi_l_Finger_04_03SHJnt
+    100058: Proxi_l_Finger_04_04SHJnt
+    100060: Proxi_l_Leg_AnkleSHJnt
+    100062: Proxi_l_Leg_BallSHJnt
+    100064: Proxi_l_Leg_HipSHJnt
+    100066: Proxi_l_Leg_KneeSHJnt
+    100068: Proxi_l_Leg_ToeSHJnt
+    100070: Proxi_l_Thumb_01_01SHJnt
+    100072: Proxi_l_Thumb_01_02SHJnt
+    100074: Proxi_l_Thumb_01_03SHJnt
     100076: Proxi_Neck_01SHJnt
     100078: Proxi_Neck_TopSHJnt
     100080: Proxi_r_Arm_ClavicleSHJnt
@@ -81,44 +81,44 @@ ModelImporter:
     100146: Proxi_Spine_03SHJnt
     100148: Proxi_Spine_04SHJnt
     100150: Proxi_Spine_TopSHJnt
-    400000: Gun_Mesh
-    400002: //RootNode
-    400004: Proxi_Hair_AuxSHJnt
-    400006: Proxi_HairString_01_01SHJnt
-    400008: Proxi_HairString_01_02SHJnt
-    400010: Proxi_Head_JawEndSHJnt
-    400012: Proxi_Head_JawSHJnt
-    400014: Proxi_Head_TopSHJnt
-    400016: Proxi_l_Arm_ClavicleSHJnt
-    400018: Proxi_l_Arm_ElbowSHJnt
-    400020: Proxi_l_Arm_ShoulderSHJnt
-    400022: Proxi_l_Arm_WristSHJnt
-    400024: Proxi_l_Eye_01SHJnt
-    400026: Proxi_l_Finger_01_01SHJnt
-    400028: Proxi_l_Finger_01_02SHJnt
-    400030: Proxi_l_Finger_01_03SHJnt
-    400032: Proxi_l_Finger_01_04SHJnt
-    400034: Proxi_l_Finger_02_01SHJnt
-    400036: Proxi_l_Finger_02_02SHJnt
-    400038: Proxi_l_Finger_02_03SHJnt
-    400040: Proxi_l_Finger_02_04SHJnt
-    400042: Proxi_l_Finger_03_01SHJnt
-    400044: Proxi_l_Finger_03_02SHJnt
-    400046: Proxi_l_Finger_03_03SHJnt
-    400048: Proxi_l_Finger_03_04SHJnt
-    400050: Proxi_l_Finger_04_01SHJnt
-    400052: Proxi_l_Finger_04_02SHJnt
-    400054: Proxi_l_Finger_04_03SHJnt
-    400056: Proxi_l_Finger_04_04SHJnt
-    400058: Proxi_l_Leg_AnkleSHJnt
-    400060: Proxi_l_Leg_BallSHJnt
-    400062: Proxi_l_Leg_HipSHJnt
-    400064: Proxi_l_Leg_KneeSHJnt
-    400066: Proxi_l_Leg_ToeSHJnt
-    400068: Proxi_l_Thumb_01_01SHJnt
-    400070: Proxi_l_Thumb_01_02SHJnt
-    400072: Proxi_l_Thumb_01_03SHJnt
-    400074: Proxi_Mesh
+    400000: CharacterModel_LowPoly_Body:Group45620
+    400002: Gun_Mesh
+    400004: //RootNode
+    400006: Proxi_Hair_AuxSHJnt
+    400008: Proxi_HairString_01_01SHJnt
+    400010: Proxi_HairString_01_02SHJnt
+    400012: Proxi_Head_JawEndSHJnt
+    400014: Proxi_Head_JawSHJnt
+    400016: Proxi_Head_TopSHJnt
+    400018: Proxi_l_Arm_ClavicleSHJnt
+    400020: Proxi_l_Arm_ElbowSHJnt
+    400022: Proxi_l_Arm_ShoulderSHJnt
+    400024: Proxi_l_Arm_WristSHJnt
+    400026: Proxi_l_Eye_01SHJnt
+    400028: Proxi_l_Finger_01_01SHJnt
+    400030: Proxi_l_Finger_01_02SHJnt
+    400032: Proxi_l_Finger_01_03SHJnt
+    400034: Proxi_l_Finger_01_04SHJnt
+    400036: Proxi_l_Finger_02_01SHJnt
+    400038: Proxi_l_Finger_02_02SHJnt
+    400040: Proxi_l_Finger_02_03SHJnt
+    400042: Proxi_l_Finger_02_04SHJnt
+    400044: Proxi_l_Finger_03_01SHJnt
+    400046: Proxi_l_Finger_03_02SHJnt
+    400048: Proxi_l_Finger_03_03SHJnt
+    400050: Proxi_l_Finger_03_04SHJnt
+    400052: Proxi_l_Finger_04_01SHJnt
+    400054: Proxi_l_Finger_04_02SHJnt
+    400056: Proxi_l_Finger_04_03SHJnt
+    400058: Proxi_l_Finger_04_04SHJnt
+    400060: Proxi_l_Leg_AnkleSHJnt
+    400062: Proxi_l_Leg_BallSHJnt
+    400064: Proxi_l_Leg_HipSHJnt
+    400066: Proxi_l_Leg_KneeSHJnt
+    400068: Proxi_l_Leg_ToeSHJnt
+    400070: Proxi_l_Thumb_01_01SHJnt
+    400072: Proxi_l_Thumb_01_02SHJnt
+    400074: Proxi_l_Thumb_01_03SHJnt
     400076: Proxi_Neck_01SHJnt
     400078: Proxi_Neck_TopSHJnt
     400080: Proxi_r_Arm_ClavicleSHJnt
@@ -157,32 +157,16 @@ ModelImporter:
     400146: Proxi_Spine_03SHJnt
     400148: Proxi_Spine_04SHJnt
     400150: Proxi_Spine_TopSHJnt
-    2100000: StingrayPBS1
-    2100002: ProxiRigU_002_Hair
-    2100004: ProxiRigU_002_BodyFace
-    4300000: Gun_Mesh
-    4300002: Proxi_Mesh
+    2100000: lambert1
+    4300000: CharacterModel_LowPoly_Body:Group45620
+    4300002: Gun_Mesh
+    7400000: Take 001
     9500000: //RootNode
-    13700000: Gun_Mesh
-    13700002: Proxi_Mesh
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: ProxiRigU_002_BodyFace
-    second: {fileID: 2100000, guid: a4199eae4abec1e48b6084ba0c59162e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: ProxiRigU_002_Hair
-    second: {fileID: 2100000, guid: 0b18b8b8f22ad4a4fb9bcfc76c22a0dd, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: StingrayPBS1
-    second: {fileID: 2100000, guid: f73ab709ccd87f548953894f3366122c, type: 2}
+    13700000: CharacterModel_LowPoly_Body:Group45620
+    13700002: Gun_Mesh
+  externalObjects: {}
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -199,7 +183,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -236,7 +220,7 @@ ModelImporter:
     tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 1
-  copyAvatar: 0
+  copyAvatar: 1
   humanDescription:
     serializedVersion: 2
     human: []
@@ -253,7 +237,8 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 234d7965580703a44ace6fc1a3f2826e,
+    type: 3}
   animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
