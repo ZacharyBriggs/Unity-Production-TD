@@ -6,6 +6,7 @@ public class PlayerMovementBehaviour : MonoBehaviour
 {
     public float Speed = 10;
     public Vector3 InputVector;
+    private Animator animation;
     private CharacterController controller;
 
     public Vector3 camRight;
@@ -14,6 +15,7 @@ public class PlayerMovementBehaviour : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        animation = GetComponent<Animator>();
         controller = GetComponent<CharacterController>();
     }
     // Update is called once per frame
@@ -23,6 +25,10 @@ public class PlayerMovementBehaviour : MonoBehaviour
         camForward = Camera.main.transform.forward;
         var h = Input.GetAxis("Horizontal");
         var v = Input.GetAxis("Vertical");
+        if (Input.GetAxis("Horizontal") > 0 || Input.GetAxis("Vertical") > 0)
+            animation.SetBool("IsWalking",true);
+        else
+            animation.SetBool("IsWalking",false);
         InputVector = new Vector3(h,0,v);
         camForward *= InputVector.z;
         camRight *= InputVector.x;
