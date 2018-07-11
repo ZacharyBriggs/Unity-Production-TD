@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 143895404641724940}
   - component: {fileID: 114646715215212690}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Proxi@Pose 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2340,7 +2340,6 @@ MonoBehaviour:
   Cooldown: 1
   Damage: 10
   Range: 30
-  camera: {fileID: 0}
 --- !u!114 &114858902031927834
 MonoBehaviour:
   m_ObjectHideFlags: 1
