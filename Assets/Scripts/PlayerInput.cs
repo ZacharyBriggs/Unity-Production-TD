@@ -12,11 +12,12 @@ public static class PlayerInput
         }
     }
 
-    public static bool Sprint()
+    public static bool Sprint
     {
-        if (Input.GetButton("Sprint"))
-            return true;
-        return false;
+        get
+        {
+            return Input.GetButton("Sprint");
+        }
     }
-    
+
 }
