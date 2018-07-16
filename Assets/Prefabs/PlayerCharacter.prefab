@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 143895404641724940}
   - component: {fileID: 114646715215212690}
   m_Layer: 0
-  m_Name: Proxi@Pose 1
+  m_Name: PlayerCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2340,6 +2340,8 @@ MonoBehaviour:
   Cooldown: 1
   Damage: 10
   Range: 30
+  fpscam: {fileID: 0}
+  freelookcam: {fileID: 0}
 --- !u!114 &114858902031927834
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2352,6 +2354,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 10
+  WalkSpeed: 2
+  RunSpeed: 4
   InputVector: {x: 0, y: 0, z: 0}
   camRight: {x: 0, y: 0, z: 0}
   camForward: {x: 0, y: 0, z: 0}

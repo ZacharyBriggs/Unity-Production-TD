@@ -197,7 +197,7 @@ GameObject:
   - component: {fileID: 195122408973444446}
   - component: {fileID: 114254511577267974}
   m_Layer: 0
-  m_Name: Payload_mesh (1)
+  m_Name: Payload
   m_TagString: Payload
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3026,11 +3026,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OnPayLoadStopped: {fileID: 11400000, guid: 656a9ce5058c6ac4eb477df4e06355cf, type: 2}
+  OnPayloadStart: {fileID: 11400000, guid: 4efb94d310795c948857f6ef08c71a80, type: 2}
   Health: 999
   Stopped: 0
   Path: {fileID: 11400000, guid: 3a60ed67f1729f54c80641a1ff31558f, type: 2}
   CurrentNode: 0
-  OnPayloadStart: {fileID: 11400000, guid: 4efb94d310795c948857f6ef08c71a80, type: 2}
 --- !u!114 &114554942294785866
 MonoBehaviour:
   m_ObjectHideFlags: 1
