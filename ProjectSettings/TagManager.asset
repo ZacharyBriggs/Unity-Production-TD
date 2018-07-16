@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - Payload
+  - POV
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
