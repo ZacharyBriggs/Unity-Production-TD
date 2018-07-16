@@ -2,13 +2,14 @@
 
 public class KillEnemyBehaviour : MonoBehaviour
 {
-    private void KillEnemy()
+    public int EnemiesLeft = 20;
+
+    public void KillEnemy()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-            if (gameObject.name == "Enemy")
-                DestroyObject(gameObject);
+        EnemiesLeft -= 2;
+        Destroy(gameObject);
     }
-    
+
     // Update is called once per frame
     private void Update()
     {

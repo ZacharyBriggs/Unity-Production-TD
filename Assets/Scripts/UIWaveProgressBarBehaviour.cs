@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class UIWaveProgressBarBehaviour : MonoBehaviour
+public class UIWaveProgressBarBehaviour : KillEnemyBehaviour
 {
-    public int EnemiesLeft = 20;
     public int EnemiesTotal = 20;
     public IntVariable Progress;
 
@@ -19,25 +18,27 @@ public class UIWaveProgressBarBehaviour : MonoBehaviour
     //then define what it means to kill an enemy
 
     //ToDo: move killing enemy to somewhere related to enemybehaviour
-    private void KillEnemy()
-    {
-        EnemiesLeft -= 2;
-        Destroy(gameObject);
-    }
+   //Check KillEnemyBehaviour
 
-
-    private int CalculateProgress()
+    public void newWave()
     {
-        //Feedback: 3
-        //use an equation when you are writing code that checks on a series of numbers
-        //example: if you write more than 5 lines of code that are if statements stop...
-        //enemiesremaining | percent
-        //20               | 0
-        //0                | 100
-        //0/20
-        //20/20
-        return EnemiesLeft / EnemiesTotal * 100 - 100;
+        if (EnemiesLeft == EnemiesTotal)
+        {
+            EnemiesLeft = 0;
+        }
     }
+    //private int CalculateProgress()
+    //{
+    //    //Feedback: 3
+    //    //use an equation when you are writing code that checks on a series of numbers
+    //    //example: if you write more than 5 lines of code that are if statements stop...
+    //    //enemiesremaining | percent
+    //    //20               | 0
+    //    //0                | 100
+    //    //0/20
+    //    //20/20
+    //    return EnemiesLeft / EnemiesTotal * 100 - 100;
+    //}
 
     //Feedback: 4
     //avoid returning the argument to a function. return a localvariable that does SOMETHING to that argument
@@ -51,8 +52,10 @@ public class UIWaveProgressBarBehaviour : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        WaveProgressUI.fillAmount = CalculateProgress();
+        //WaveProgressUI.fillAmount = CalculateProgress();
         if (Input.GetKeyDown(KeyCode.Space)) KillEnemy();
+        ChangeFillAmount();
+
     }
 
     private void ChangeFillAmount()
