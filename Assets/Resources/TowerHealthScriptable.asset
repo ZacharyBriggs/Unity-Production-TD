@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b012b11c75c9948ae1c322acd37390, type: 3}
   m_Name: TowerHealthScriptable
   m_EditorClassIdentifier: 
-  _mMaxValue: 5
-  _mValue: 1
+  _mMaxValue: 100
+  _mValue: 100
