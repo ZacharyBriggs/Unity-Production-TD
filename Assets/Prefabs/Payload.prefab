@@ -193,13 +193,12 @@ GameObject:
   - component: {fileID: 4251512270583170}
   - component: {fileID: 95391662545735764}
   - component: {fileID: 54135490616408672}
-  - component: {fileID: 135581391829657344}
   - component: {fileID: 65998097031070698}
   - component: {fileID: 195122408973444446}
   - component: {fileID: 114254511577267974}
   m_Layer: 0
   m_Name: Payload_mesh (1)
-  m_TagString: Untagged
+  m_TagString: Payload
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1304,6 +1303,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1820506935204220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4735880305751932}
+  - component: {fileID: 135225182863903358}
+  - component: {fileID: 114058153149707480}
+  - component: {fileID: 114618346355774658}
+  - component: {fileID: 114554942294785866}
+  m_Layer: 0
+  m_Name: PhysicsTriggerListener
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1831281281702624
 GameObject:
   m_ObjectHideFlags: 1
@@ -1876,6 +1894,7 @@ Transform:
   m_Children:
   - {fileID: 4843357083093432}
   - {fileID: 4520042156864020}
+  - {fileID: 4735880305751932}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2558,6 +2577,19 @@ Transform:
   m_Father: {fileID: 4836878492307800}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4735880305751932
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1820506935204220}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4251512270583170}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4745383029283296
 Transform:
   m_ObjectHideFlags: 1
@@ -2968,6 +3000,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114058153149707480
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1820506935204220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf84974c5274a34479d2255fa3d09345, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListenerTag: Player
+  EnterTrigger: {fileID: 11400000, guid: 7b5bdc95b9b899b479e4f767297d4b7c, type: 2}
+  ExitTrigger: {fileID: 11400000, guid: a185e1fc50ae93e43b2936958733752e, type: 2}
 --- !u!114 &114254511577267974
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2979,14 +3025,74 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ae8cc828856da5478e62d8a6a10bc5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnPayLoadStopped: {fileID: 11400000, guid: 656a9ce5058c6ac4eb477df4e06355cf, type: 2}
   Health: 999
-  Path: {fileID: 11400000, guid: 5d8901a32ca67a645b0fb8825f08f2ff, type: 2}
---- !u!135 &135581391829657344
+  Stopped: 0
+  Path: {fileID: 11400000, guid: 3a60ed67f1729f54c80641a1ff31558f, type: 2}
+  CurrentNode: 0
+  OnPayloadStart: {fileID: 11400000, guid: 4efb94d310795c948857f6ef08c71a80, type: 2}
+--- !u!114 &114554942294785866
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1820506935204220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64fde5c8e9a2bb0448411d2f20aed070, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: a185e1fc50ae93e43b2936958733752e, type: 2}
+  GameEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114254511577267974}
+        m_MethodName: set_CurrentSpeed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &114618346355774658
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1820506935204220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64fde5c8e9a2bb0448411d2f20aed070, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: 7b5bdc95b9b899b479e4f767297d4b7c, type: 2}
+  GameEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114254511577267974}
+        m_MethodName: set_CurrentSpeed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!135 &135225182863903358
 SphereCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1138808276353648}
+  m_GameObject: {fileID: 1820506935204220}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
