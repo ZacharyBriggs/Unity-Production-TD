@@ -9,10 +9,13 @@ public class MachineGunBehaviour : MonoBehaviour
     public float Range;
     protected EnemyBehaviour Target;
     protected float Timer;
+    private LineRenderer line;
 
     void Start()
     {
         Timer = Cooldown;
+        line = GetComponent<LineRenderer>();
+        line.alignment = LineAlignment.Local;
     }
 
     void Update()
@@ -24,7 +27,7 @@ public class MachineGunBehaviour : MonoBehaviour
     {
         if (Target != null)
         {
-            Debug.DrawLine(this.transform.position, Target.transform.position, Color.red, 0.1f);
+            Debug.DrawLine(this.transform.position,Target.transform.position,Color.yellow);
             Target.TakeDamage(Damage);
             Timer = Cooldown;
         }
