@@ -26,12 +26,16 @@ public class EnemyBehaviour : MonoBehaviour
         GetComponent<NavMeshAgent>().destination = Target.transform.position;
         this.Health = HealthScript.Health;
     }
-
+    public UnityEngine.Events.UnityEvent OnEnemyDied;
     public void TakeDamage(int amount)
     {
         HealthScript.TakeDamage(amount);
         if (HealthScript.Health <= 0)
+        {
+            OnEnemyDied.Invoke();
             Destroy(this.gameObject);
+        }
+            
     }
     void Attack(GameObject other)
     {
