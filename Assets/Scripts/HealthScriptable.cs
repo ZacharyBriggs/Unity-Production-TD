@@ -33,4 +33,10 @@ public class HealthScriptable : IntVariable
         Health -= amount;
         if (Health <= 0) Debug.Log("Object is dead.");
     }
+
+    public virtual void Recover(int amount)
+    {
+        Health += amount;
+        if(Health<_mMaxValue)Debug.Log("Healing");
+    }
 }
