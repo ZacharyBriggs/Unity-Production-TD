@@ -15,7 +15,7 @@ public class PlayerMovementBehaviour : MonoBehaviour
     public Vector3 camRight;
 
     public Vector3 camForward;
-    // Use this for initialization
+
     void Start()
     {
         _animator = GetComponent<Animator>();
@@ -26,7 +26,7 @@ public class PlayerMovementBehaviour : MonoBehaviour
     public static bool TOGGLEMOVE;
     void Update()
     {
-
+        //if toggle move is true the player is aiming
         GetWalk();
         if (TOGGLEMOVE)
             OldMove();
@@ -46,7 +46,6 @@ public class PlayerMovementBehaviour : MonoBehaviour
 
     void OldMove()
     {
-
         camRight = Camera.main.transform.right;
         camForward = Camera.main.transform.forward;
         camForward *= PlayerInput.InputVector.z;
@@ -55,7 +54,7 @@ public class PlayerMovementBehaviour : MonoBehaviour
         moveVector = (camForward + camRight);
         var right = new Vector3(camForward.z, 0, -camForward.x);
 
-        //ToDo: handle rotation of player
+        transform.Rotate(Vector3.up, Input.GetAxis("Mouse X") * 99 * Time.deltaTime);
         controller.SimpleMove(moveVector.normalized * Speed);
 
     }
