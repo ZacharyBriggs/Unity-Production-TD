@@ -12,8 +12,6 @@ MonoBehaviour:
   m_Name: Path2
   m_EditorClassIdentifier: 
   Steps:
-  - {x: 181.83, y: -0.000003814697, z: 101.78}
-  - {x: 182, y: -0.17, z: 155.83}
-  Nodes:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 76897eba449d9d644ba45513fbbea51f, type: 2}
+  - {fileID: 11400000, guid: 67cba69bcfbd72a4da2e2418a7a678d7, type: 2}
+  - {fileID: 11400000, guid: 236e906c5eaa8e8499a6951dbadbd18d, type: 2}
