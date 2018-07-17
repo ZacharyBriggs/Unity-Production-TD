@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 946b649d96c10dd4083812e053688f91
-timeCreated: 1531167553
+guid: 3c39d8eb7d31a3d48a4cddcf3ed2e2eb
+timeCreated: 1531775842
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -81,7 +81,6 @@ ModelImporter:
     100146: Proxi_Spine_03SHJnt
     100148: Proxi_Spine_04SHJnt
     100150: Proxi_Spine_TopSHJnt
-    100152: Proxi_Mesh
     400000: CharacterModel_LowPoly_Body:Group45620
     400002: Gun_Mesh
     400004: //RootNode
@@ -158,16 +157,13 @@ ModelImporter:
     400146: Proxi_Spine_03SHJnt
     400148: Proxi_Spine_04SHJnt
     400150: Proxi_Spine_TopSHJnt
-    400152: Proxi_Mesh
     2100000: lambert1
     4300000: CharacterModel_LowPoly_Body:Group45620
     4300002: Gun_Mesh
-    4300004: Proxi_Mesh
     7400000: Take 001
     9500000: //RootNode
     13700000: CharacterModel_LowPoly_Body:Group45620
     13700002: Gun_Mesh
-    13700004: Proxi_Mesh
   externalObjects: {}
   materials:
     importMaterials: 0
@@ -187,7 +183,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
