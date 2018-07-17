@@ -8,10 +8,7 @@ public class MachineGunTurretBehaviour : MachineGunBehaviour
 {
     
     private List<EnemyBehaviour> Enemies = new List<EnemyBehaviour>();
-    [SerializeField]
-    private float DistanceFromTarget;
 
-    // Use this for initialization
     void Start ()
 	{
 	    var foundEnemies = FindObjectsOfType<EnemyBehaviour>();
@@ -21,7 +18,6 @@ public class MachineGunTurretBehaviour : MachineGunBehaviour
 	    }
 	}
 	
-	// Update is called once per frame
     void Update()
     {
         foreach (var enemy in Enemies)
