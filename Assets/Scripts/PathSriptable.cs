@@ -4,5 +4,5 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Path", menuName = "Path")]
 public class PathSriptable : ScriptableObject
 {
-    public List<StepScriptable> Steps;
+    public List<Vector3> Steps;
 }

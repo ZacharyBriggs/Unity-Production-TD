@@ -9,10 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c4ae4412e4c9574e82e65c143906db1, type: 3}
-  m_Name: Path2Step2Wave
+  m_Name: Wave1
   m_EditorClassIdentifier: 
   MaxEnemies: 2
   CurrentEnemies: 2
   EnemySpawnPositions:
   - {x: 322.92, y: 0, z: 315.8712}
-  - {x: 294.7, y: 0, z: 317.58}
+  - {x: 294.7, y: 5.4496506e-34, z: 317.58}

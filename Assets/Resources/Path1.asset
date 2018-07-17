@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: Path1
   m_EditorClassIdentifier: 
   Steps:
-  - {x: 362.9, y: 1, z: 334.6}
-  - {x: 318.9, y: 1, z: 329.9}
-  - {x: 235, y: 1, z: 284.1}
+  - {x: 362.9, y: 0, z: 334.6}
+  - {x: 306.9575, y: 0, z: 325.96}
+  - {x: 4.6e-44, y: 0, z: 0.0002620765}
