@@ -1,52 +1,53 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class EnemyBehaviour : MonoBehaviour
 {
-    public int MaxHealth;
-    public int Health;
+    [NonSerialized]public int MaxHealth;
+    [NonSerialized]public int Health;
     public int Damage;
-    private GameObject Target;
-    protected HealthScriptable HealthScript;
+    private GameObject _target;
+    private HealthScriptable _healthScript;
 
     // Use this for initialization
-    void Start()
+    private void Start()
     {
-        Health = MaxHealth;
-        HealthScript = ScriptableObject.CreateInstance<HealthScriptable>();
-        HealthScript.Health = this.MaxHealth;
-        Target = FindObjectOfType<PayloadBehaviour>().gameObject;
+        _healthScript = ScriptableObject.CreateInstance<HealthScriptable>();
+        MaxHealth = _healthScript.Health;
+        _target = FindObjectOfType<PayloadBehaviour>().gameObject;
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        GetComponent<NavMeshAgent>().destination = Target.transform.position;
-        this.Health = HealthScript.Health;
+        GetComponent<NavMeshAgent>().destination = _target.transform.position;
+        this.Health = _healthScript.Health;
     }
     public UnityEngine.Events.UnityEvent OnEnemyDied;
     public void TakeDamage(int amount)
     {
-        HealthScript.TakeDamage(amount);
-        if (HealthScript.Health <= 0)
+        _healthScript.TakeDamage(amount);
+        if (_healthScript.Health <= 0)
         {
             OnEnemyDied.Invoke();
             Destroy(this.gameObject);
         }
             
     }
-    void Attack(GameObject other)
+
+    private void Attack(GameObject other)
     {
             //Play attack animation
             var target = other.GetComponent<PayloadBehaviour>();
             target.TakeDamage(Damage);
     }
 
-    void OnCollisionEnter(Collision collider)
+    private void OnCollisionEnter(Collision collision)
     {
-        if(collider.gameObject.tag == "Payload" || collider.gameObject.tag == "Player")
-            Attack(collider.gameObject);
+        if(collision.gameObject.CompareTag("Payload") || collision.gameObject.CompareTag("Player"))
+            Attack(collision.gameObject);
     }
 }
