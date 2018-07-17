@@ -81,6 +81,7 @@ ModelImporter:
     100146: Proxi_Spine_03SHJnt
     100148: Proxi_Spine_04SHJnt
     100150: Proxi_Spine_TopSHJnt
+    100152: Proxi_Mesh
     400000: CharacterModel_LowPoly_Body:Group45620
     400002: Gun_Mesh
     400004: //RootNode
@@ -157,13 +158,16 @@ ModelImporter:
     400146: Proxi_Spine_03SHJnt
     400148: Proxi_Spine_04SHJnt
     400150: Proxi_Spine_TopSHJnt
+    400152: Proxi_Mesh
     2100000: lambert1
     4300000: CharacterModel_LowPoly_Body:Group45620
     4300002: Gun_Mesh
+    4300004: Proxi_Mesh
     7400000: Take 001
     9500000: //RootNode
     13700000: CharacterModel_LowPoly_Body:Group45620
     13700002: Gun_Mesh
+    13700004: Proxi_Mesh
   externalObjects: {}
   materials:
     importMaterials: 0
