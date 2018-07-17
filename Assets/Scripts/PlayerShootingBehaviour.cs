@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerShootingBehaviour : MachineGunBehaviour
 {
-    public GameObject fpscam;
-    public GameObject freelookcam;
+    public GameObject Fpscam;
+    public GameObject Freelookcam;
     void Start()
     {
         Cursor.visible = false;
@@ -15,9 +15,9 @@ public class PlayerShootingBehaviour : MachineGunBehaviour
     void Update()
     {
 
-        fpscam.SetActive(Input.GetButton("Fire2"));
-        freelookcam.SetActive(!Input.GetButton("Fire2"));
-        freelookcam.GetComponent<Cinemachine.CinemachineVirtualCameraBase>().enabled = !Input.GetButton("Fire2");
+        Fpscam.SetActive(Input.GetButton("Fire2"));
+        Freelookcam.SetActive(!Input.GetButton("Fire2"));
+        Freelookcam.GetComponent<Cinemachine.CinemachineVirtualCameraBase>().enabled = !Input.GetButton("Fire2");
         PlayerMovementBehaviour.TOGGLEMOVE = Input.GetButton("Fire2");
         if (Input.GetButtonDown("Fire1"))
         {
@@ -27,7 +27,7 @@ public class PlayerShootingBehaviour : MachineGunBehaviour
             {
                 Debug.Log("Hit " + hit.collider.gameObject.tag);
                 Debug.DrawRay(this.transform.position, camforwardcast, Color.yellow, 1);
-                if (hit.collider.gameObject.tag == "Enemy")
+                if (hit.collider.gameObject.CompareTag("Enemy"))
                 {
                     Target = hit.collider.gameObject.GetComponent<EnemyBehaviour>();
                     Shoot();

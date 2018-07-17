@@ -9,13 +9,13 @@ public class PhysicsTriggerListener : MonoBehaviour
     public GameEvent EnterTrigger;
     public GameEvent ExitTrigger;
 
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag(ListenerTag))
             EnterTrigger.Raise();
     }
 
-    void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag(ListenerTag))
             ExitTrigger.Raise();

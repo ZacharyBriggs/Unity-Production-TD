@@ -12,20 +12,22 @@ public class PayloadBehaviour : MonoBehaviour
     [Header("Events")]
     public GameEvent OnPayLoadStopped;
     public GameEvent OnPayloadStart;
+    public GameEvent OnTakeDamage;
+    public GameEvent OnPaylodDied;
     [Space]
     public int Health;
     public bool Stopped;
-    private HealthScriptable HealthScript;
+    private HealthScriptable _healthScript;
     public PathSriptable Path;
-    public int CurrentSpeed { get; set; }
+    private int CurrentSpeed { get; set; }
     public int CurrentNode = 0;
     private int NextNode = 1;
-    private NavMeshAgent Payload;
+    private NavMeshAgent _payload;
     
 
     public void StopPayload()
     {
-        Payload.isStopped = true;
+        _payload.isStopped = true;
         OnPayLoadStopped.Raise();
     }
     
@@ -33,17 +35,30 @@ public class PayloadBehaviour : MonoBehaviour
     {
         ChangeDestination();
         OnPayloadStart.Raise();
-        Payload.isStopped = false;
+        _payload.isStopped = false;
+    }
+
+    public void TakeDamage(int amount)
+    {
+        OnTakeDamage.Raise();
+        _healthScript.TakeDamage(amount);
+        if (_healthScript.Health <= 0)
+            OnPaylodDied.Raise();
+    }
+
+    public void Die()
+    {
+        Destroy(this.gameObject);
     }
 
     // Use this for initialization
     private void Start()
     {
-        HealthScript = ScriptableObject.CreateInstance<HealthScriptable>();
-        HealthScript.Health = this.Health;
-        this.transform.position = Path.Steps[0].position;
-        Payload = GetComponent<NavMeshAgent>();
-        Payload.destination = Path.Steps[1].position;
+        _healthScript = ScriptableObject.CreateInstance<HealthScriptable>();
+        _healthScript.Health = this.Health;
+        this.transform.position = Path.Steps[0];
+        _payload = GetComponent<NavMeshAgent>();
+        _payload.destination = Path.Steps[1];
     }
 
     private int raiseCounter = 0;
@@ -51,17 +66,13 @@ public class PayloadBehaviour : MonoBehaviour
     private void Update()
     {
 
-        Payload.speed = CurrentSpeed;
-        this.Health = HealthScript.Health;
+        _payload.speed = CurrentSpeed;
+        this.Health = _healthScript.Health;
         if (Path == null)
             return;
 
-        //ToDo: use mathf.approximately(float,float) for floating point comparison
-        //if (this.transform.position.x == Path.Steps[NextNode].position.x
-        //    && this.transform.position.z == Path.Steps[NextNode].position.z && CurrentNode + 2 < Path.Steps.Count)
-        //    ChangeDestination();
-        if (this.transform.position.x == Path.Steps[Path.Steps.Count - 1].position.x &&
-                 this.transform.position.z == Path.Steps[Path.Steps.Count - 1].position.z)
+        if (Mathf.Approximately(this.transform.position.x, Path.Steps[Path.Steps.Count - 1].x) &&
+                 Mathf.Approximately(this.transform.position.z, Path.Steps[Path.Steps.Count - 1].z))
         {
             Win();
         }
@@ -77,21 +88,7 @@ public class PayloadBehaviour : MonoBehaviour
     {
         CurrentNode = NextNode;
         NextNode += 1;
-        Payload.SetDestination(Path.Steps[NextNode].position);
-
-        //if (Path.Steps[CurrentNode].IsWaveNode)
-        //{
-        //    //SpawnWave();
-        //}
-    }
-
-
-
-    public void TakeDamage(int amount)
-    {
-        HealthScript.TakeDamage(amount);
-        if (HealthScript.Health <= 0)
-            Destroy(this.gameObject);
+        _payload.SetDestination(Path.Steps[NextNode]);
     }
 
     private void Win()
@@ -99,20 +96,4 @@ public class PayloadBehaviour : MonoBehaviour
         Debug.Log("You Win!!!!");
         SceneManager.LoadScene("mainmenu");
     }
-
-    //private void OnTriggerStay(Collider other)
-    //{
-    //    if (other.gameObject.tag == "Player" && Stopped == false)
-    //        CurrentSpeed = 3;
-    //    else if (Stopped)
-    //        CurrentSpeed = 0;
-    //}
-
-    //private void OnTriggerExit(Collider other)
-    //{
-    //    if (other.gameObject.tag == "Player")
-    //        CurrentSpeed = 0;
-    //}
-
-    
 }
