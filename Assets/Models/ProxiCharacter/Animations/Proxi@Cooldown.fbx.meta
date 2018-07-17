@@ -1,0 +1,247 @@
+fileFormatVersion: 2
+guid: 04b63f2e068e97b4493f03180e3db262
+timeCreated: 1531775841
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Gun_Mesh
+    100002: //RootNode
+    100004: Proxi_Hair_AuxSHJnt
+    100006: Proxi_HairString_01_01SHJnt
+    100008: Proxi_HairString_01_02SHJnt
+    100010: Proxi_Head_JawEndSHJnt
+    100012: Proxi_Head_JawSHJnt
+    100014: Proxi_Head_TopSHJnt
+    100016: Proxi_l_Arm_ClavicleSHJnt
+    100018: Proxi_l_Arm_ElbowSHJnt
+    100020: Proxi_l_Arm_ShoulderSHJnt
+    100022: Proxi_l_Arm_WristSHJnt
+    100024: Proxi_l_Eye_01SHJnt
+    100026: Proxi_l_Finger_01_01SHJnt
+    100028: Proxi_l_Finger_01_02SHJnt
+    100030: Proxi_l_Finger_01_03SHJnt
+    100032: Proxi_l_Finger_01_04SHJnt
+    100034: Proxi_l_Finger_02_01SHJnt
+    100036: Proxi_l_Finger_02_02SHJnt
+    100038: Proxi_l_Finger_02_03SHJnt
+    100040: Proxi_l_Finger_02_04SHJnt
+    100042: Proxi_l_Finger_03_01SHJnt
+    100044: Proxi_l_Finger_03_02SHJnt
+    100046: Proxi_l_Finger_03_03SHJnt
+    100048: Proxi_l_Finger_03_04SHJnt
+    100050: Proxi_l_Finger_04_01SHJnt
+    100052: Proxi_l_Finger_04_02SHJnt
+    100054: Proxi_l_Finger_04_03SHJnt
+    100056: Proxi_l_Finger_04_04SHJnt
+    100058: Proxi_l_Leg_AnkleSHJnt
+    100060: Proxi_l_Leg_BallSHJnt
+    100062: Proxi_l_Leg_HipSHJnt
+    100064: Proxi_l_Leg_KneeSHJnt
+    100066: Proxi_l_Leg_ToeSHJnt
+    100068: Proxi_l_Thumb_01_01SHJnt
+    100070: Proxi_l_Thumb_01_02SHJnt
+    100072: Proxi_l_Thumb_01_03SHJnt
+    100074: Proxi_Mesh
+    100076: Proxi_Neck_01SHJnt
+    100078: Proxi_Neck_TopSHJnt
+    100080: Proxi_r_Arm_ClavicleSHJnt
+    100082: Proxi_r_Arm_ElbowSHJnt
+    100084: Proxi_r_Arm_ShoulderSHJnt
+    100086: Proxi_r_Arm_WristSHJnt
+    100088: Proxi_r_Eye_01SHJnt
+    100090: Proxi_r_Finger_01_01SHJnt
+    100092: Proxi_r_Finger_01_02SHJnt
+    100094: Proxi_r_Finger_01_03SHJnt
+    100096: Proxi_r_Finger_01_04SHJnt
+    100098: Proxi_r_Finger_02_01SHJnt
+    100100: Proxi_r_Finger_02_02SHJnt
+    100102: Proxi_r_Finger_02_03SHJnt
+    100104: Proxi_r_Finger_02_04SHJnt
+    100106: Proxi_r_Finger_03_01SHJnt
+    100108: Proxi_r_Finger_03_02SHJnt
+    100110: Proxi_r_Finger_03_03SHJnt
+    100112: Proxi_r_Finger_03_04SHJnt
+    100114: Proxi_r_Finger_04_01SHJnt
+    100116: Proxi_r_Finger_04_02SHJnt
+    100118: Proxi_r_Finger_04_03SHJnt
+    100120: Proxi_r_Finger_04_04SHJnt
+    100122: Proxi_r_Leg_AnkleSHJnt
+    100124: Proxi_r_Leg_BallSHJnt
+    100126: Proxi_r_Leg_HipSHJnt
+    100128: Proxi_r_Leg_KneeSHJnt
+    100130: Proxi_r_Leg_ToeSHJnt
+    100132: Proxi_r_Thumb_01_01SHJnt
+    100134: Proxi_r_Thumb_01_02SHJnt
+    100136: Proxi_r_Thumb_01_03SHJnt
+    100138: Proxi_ROOTSHJnt
+    100140: Proxi_SHJntGrp
+    100142: Proxi_Spine_01SHJnt
+    100144: Proxi_Spine_02SHJnt
+    100146: Proxi_Spine_03SHJnt
+    100148: Proxi_Spine_04SHJnt
+    100150: Proxi_Spine_TopSHJnt
+    400000: Gun_Mesh
+    400002: //RootNode
+    400004: Proxi_Hair_AuxSHJnt
+    400006: Proxi_HairString_01_01SHJnt
+    400008: Proxi_HairString_01_02SHJnt
+    400010: Proxi_Head_JawEndSHJnt
+    400012: Proxi_Head_JawSHJnt
+    400014: Proxi_Head_TopSHJnt
+    400016: Proxi_l_Arm_ClavicleSHJnt
+    400018: Proxi_l_Arm_ElbowSHJnt
+    400020: Proxi_l_Arm_ShoulderSHJnt
+    400022: Proxi_l_Arm_WristSHJnt
+    400024: Proxi_l_Eye_01SHJnt
+    400026: Proxi_l_Finger_01_01SHJnt
+    400028: Proxi_l_Finger_01_02SHJnt
+    400030: Proxi_l_Finger_01_03SHJnt
+    400032: Proxi_l_Finger_01_04SHJnt
+    400034: Proxi_l_Finger_02_01SHJnt
+    400036: Proxi_l_Finger_02_02SHJnt
+    400038: Proxi_l_Finger_02_03SHJnt
+    400040: Proxi_l_Finger_02_04SHJnt
+    400042: Proxi_l_Finger_03_01SHJnt
+    400044: Proxi_l_Finger_03_02SHJnt
+    400046: Proxi_l_Finger_03_03SHJnt
+    400048: Proxi_l_Finger_03_04SHJnt
+    400050: Proxi_l_Finger_04_01SHJnt
+    400052: Proxi_l_Finger_04_02SHJnt
+    400054: Proxi_l_Finger_04_03SHJnt
+    400056: Proxi_l_Finger_04_04SHJnt
+    400058: Proxi_l_Leg_AnkleSHJnt
+    400060: Proxi_l_Leg_BallSHJnt
+    400062: Proxi_l_Leg_HipSHJnt
+    400064: Proxi_l_Leg_KneeSHJnt
+    400066: Proxi_l_Leg_ToeSHJnt
+    400068: Proxi_l_Thumb_01_01SHJnt
+    400070: Proxi_l_Thumb_01_02SHJnt
+    400072: Proxi_l_Thumb_01_03SHJnt
+    400074: Proxi_Mesh
+    400076: Proxi_Neck_01SHJnt
+    400078: Proxi_Neck_TopSHJnt
+    400080: Proxi_r_Arm_ClavicleSHJnt
+    400082: Proxi_r_Arm_ElbowSHJnt
+    400084: Proxi_r_Arm_ShoulderSHJnt
+    400086: Proxi_r_Arm_WristSHJnt
+    400088: Proxi_r_Eye_01SHJnt
+    400090: Proxi_r_Finger_01_01SHJnt
+    400092: Proxi_r_Finger_01_02SHJnt
+    400094: Proxi_r_Finger_01_03SHJnt
+    400096: Proxi_r_Finger_01_04SHJnt
+    400098: Proxi_r_Finger_02_01SHJnt
+    400100: Proxi_r_Finger_02_02SHJnt
+    400102: Proxi_r_Finger_02_03SHJnt
+    400104: Proxi_r_Finger_02_04SHJnt
+    400106: Proxi_r_Finger_03_01SHJnt
+    400108: Proxi_r_Finger_03_02SHJnt
+    400110: Proxi_r_Finger_03_03SHJnt
+    400112: Proxi_r_Finger_03_04SHJnt
+    400114: Proxi_r_Finger_04_01SHJnt
+    400116: Proxi_r_Finger_04_02SHJnt
+    400118: Proxi_r_Finger_04_03SHJnt
+    400120: Proxi_r_Finger_04_04SHJnt
+    400122: Proxi_r_Leg_AnkleSHJnt
+    400124: Proxi_r_Leg_BallSHJnt
+    400126: Proxi_r_Leg_HipSHJnt
+    400128: Proxi_r_Leg_KneeSHJnt
+    400130: Proxi_r_Leg_ToeSHJnt
+    400132: Proxi_r_Thumb_01_01SHJnt
+    400134: Proxi_r_Thumb_01_02SHJnt
+    400136: Proxi_r_Thumb_01_03SHJnt
+    400138: Proxi_ROOTSHJnt
+    400140: Proxi_SHJntGrp
+    400142: Proxi_Spine_01SHJnt
+    400144: Proxi_Spine_02SHJnt
+    400146: Proxi_Spine_03SHJnt
+    400148: Proxi_Spine_04SHJnt
+    400150: Proxi_Spine_TopSHJnt
+    2100000: lambert1
+    4300000: Proxi_Mesh
+    4300002: Gun_Mesh
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Gun_Mesh
+    13700002: Proxi_Mesh
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 234d7965580703a44ace6fc1a3f2826e,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
