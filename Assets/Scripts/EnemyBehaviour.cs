@@ -6,16 +6,18 @@ using UnityEngine.AI;
 
 public class EnemyBehaviour : MonoBehaviour
 {
+    public int Health;
     [NonSerialized]public int MaxHealth;
-    [NonSerialized]public int Health;
-    public int Damage;
+    public int Damage = 10;
     private GameObject _target;
     private HealthScriptable _healthScript;
+    public GameEvent OnEnemyDied;
 
     // Use this for initialization
     private void Start()
     {
         _healthScript = ScriptableObject.CreateInstance<HealthScriptable>();
+        _healthScript.Health = this.Health;
         MaxHealth = _healthScript.Health;
         _target = FindObjectOfType<PayloadBehaviour>().gameObject;
     }
@@ -26,14 +28,13 @@ public class EnemyBehaviour : MonoBehaviour
         GetComponent<NavMeshAgent>().destination = _target.transform.position;
         this.Health = _healthScript.Health;
     }
-    public UnityEngine.Events.UnityEvent OnEnemyDied;
+
     public void TakeDamage(int amount)
     {
         _healthScript.TakeDamage(amount);
         if (_healthScript.Health <= 0)
         {
-            OnEnemyDied.Invoke();
-            Destroy(this.gameObject);
+            OnEnemyDied.Raise();
         }
             
     }
