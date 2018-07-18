@@ -12,12 +12,7 @@ ModelImporter:
     3300000: //RootNode
     4300000: Cement_Barrier
     9500000: //RootNode
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert1
-    second: {fileID: 2100000, guid: 2fc85c3485268b84883911637dd7114f, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
