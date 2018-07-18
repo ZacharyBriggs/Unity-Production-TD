@@ -27,10 +27,12 @@ public class MachineGunBehaviour : MonoBehaviour
     {
         if (Target != null)
         {
-            Debug.DrawLine(this.transform.position,Target.transform.position,Color.yellow);
+           
             Target.TakeDamage(Damage);
             Timer = Cooldown;
         }
     }
+
+    public GameEvent OnShootEvent;
 
 }
