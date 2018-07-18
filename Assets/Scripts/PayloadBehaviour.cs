@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
-public class PayloadBehaviour : MonoBehaviour
+public class PayloadBehaviour : MonoBehaviour, IDamageable
 {
 //ToDo: we need to have methods to change the values of the intvariable references    
     private HealthScriptable HealthScript;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.Remoting.Messaging;
 using UnityEngine;
 
-public class PlayerMovementBehaviour : MonoBehaviour
+public class PlayerMovementBehaviour : MonoBehaviour, IDamageable
 {
     public float Speed = 10;
     public float WalkSpeed = 2;
@@ -73,7 +73,7 @@ public class PlayerMovementBehaviour : MonoBehaviour
             var forward = Camera.main.transform.TransformDirection(Vector3.forward);
             forward.y = 0;
             forward = forward.normalized;
-            ///such copy paste but it works
+            //such copy paste but it works
             var right = new Vector3(forward.z, 0, -forward.x);
             var targetDir = h * right + v * forward;
             if (targetDir.magnitude > 0)
@@ -83,5 +83,15 @@ public class PlayerMovementBehaviour : MonoBehaviour
         }
 
         controller.SimpleMove(moveVector * Speed);
+    }
+
+    public void TakeDamage(int amount)
+    {
+        _animator.SetBool("IsStunned",true);
+    }
+
+    void StopStun()
+    {
+        _animator.SetBool("IsStunned", false);
     }
 }

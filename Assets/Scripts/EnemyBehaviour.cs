@@ -4,29 +4,38 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyBehaviour : MonoBehaviour
+public class EnemyBehaviour : MonoBehaviour, IDamageable
 {
     public int Health;
     [NonSerialized]public int MaxHealth;
     public int Damage = 10;
     private GameObject _target;
     private HealthScriptable _healthScript;
+    private bool IsAttacking;
     public GameEvent OnEnemyDamageTaken;
-    public GameEvent OnEnemyDied;
+    public GameEvent OnEnemyAttacked;
+    private GameEvent OnEnemyDied;
+    private Animator animator;
+    private NavMeshAgent _navAgent;
+    private IDamageable attackTarget;
 
     // Use this for initialization
     private void Start()
     {
+        animator = GetComponent<Animator>();
+        OnEnemyDied = ScriptableObject.CreateInstance<GameEvent>();
         _healthScript = ScriptableObject.CreateInstance<HealthScriptable>();
         _healthScript.Health = this.Health;
         MaxHealth = _healthScript.Health;
         _target = FindObjectOfType<PayloadBehaviour>().gameObject;
+        _navAgent = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
     private void Update()
     {
-        GetComponent<NavMeshAgent>().destination = _target.transform.position;
+        _navAgent.destination = _target.transform.position;
+        animator.SetFloat("Speed",_navAgent.velocity.magnitude);
         this.Health = _healthScript.Health;
     }
 
@@ -37,20 +46,29 @@ public class EnemyBehaviour : MonoBehaviour
         if (_healthScript.Health <= 0)
         {
             OnEnemyDied.Raise();
+            animator.SetBool("IsDead",true);
         }
             
     }
-
-    private void Attack(GameObject other)
+    private void Attack(IDamageable damageable)
     {
-            //Play attack animation
-            var target = other.GetComponent<PayloadBehaviour>();
-            target.TakeDamage(Damage);
+        animator.SetBool("IsAttacking", true);
+        attackTarget = damageable;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void StopAttacking()
     {
-        if(collision.gameObject.CompareTag("Payload") || collision.gameObject.CompareTag("Player"))
-            Attack(collision.gameObject);
+        attackTarget.TakeDamage(Damage);
+        animator.SetBool("IsAttacking",false);
+    }
+
+    void DestroyEnemy()
+    {
+        Destroy(this.gameObject);
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Payload") || other.gameObject.CompareTag("Player"))
+            Attack(other.gameObject.GetComponent<IDamageable>());
     }
 }
