@@ -12,7 +12,12 @@ ModelImporter:
     3300000: //RootNode
     4300000: car:RoadKillOut
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 8a0cb2f38845ae5469f6282901f3dd89, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
