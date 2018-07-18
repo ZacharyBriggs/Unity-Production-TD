@@ -8,8 +8,8 @@ public class PlayerShootingBehaviour : MachineGunBehaviour
     public GameObject Freelookcam;
     void Start()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+    //    Cursor.visible = true;
+    //    Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
