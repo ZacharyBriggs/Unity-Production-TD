@@ -6,12 +6,14 @@ public class PlayerShootingBehaviour : MachineGunBehaviour
 {
     public GameObject Fpscam;
     public GameObject Freelookcam;
+
     void Start()
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
 
+    
     void Update()
     {
 
@@ -21,15 +23,19 @@ public class PlayerShootingBehaviour : MachineGunBehaviour
         PlayerMovementBehaviour.TOGGLEMOVE = Input.GetButton("Fire2");
         if (Input.GetButtonDown("Fire1"))
         {
+            OnShootEvent.Raise();
             RaycastHit hit = new RaycastHit();
             var camforwardcast = Camera.main.transform.forward * 1000;
+            //todo:: we could set the linerenderer to exactly where it goes if we make it here
             if (Physics.Raycast(this.transform.position, camforwardcast, out hit))
             {
+
                 Debug.Log("Hit " + hit.collider.gameObject.tag);
                 Debug.DrawRay(this.transform.position, camforwardcast, Color.yellow, 1);
+                
                 if (hit.collider.gameObject.CompareTag("Enemy"))
                 {
-                    Target = hit.collider.gameObject.GetComponent<EnemyBehaviour>();
+                    Target = hit.collider.gameObject.GetComponent<EnemyBehaviour>();                    
                     Shoot();
                 }
             }
