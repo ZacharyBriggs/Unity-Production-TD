@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9bb813869f44d54185c4c92dc570573, type: 3}
   m_Name: New UI Weapon Cooldown Scriptable
   m_EditorClassIdentifier: 
-  WeaponTemp: 0
-  MaxTemp: 0
+  MaxTemp: 100
+  Temp: 160
