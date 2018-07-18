@@ -11,6 +11,7 @@ public class EnemyBehaviour : MonoBehaviour
     public int Damage = 10;
     private GameObject _target;
     private HealthScriptable _healthScript;
+    public GameEvent OnEnemyDamageTaken;
     public GameEvent OnEnemyDied;
 
     // Use this for initialization
@@ -32,6 +33,7 @@ public class EnemyBehaviour : MonoBehaviour
     public void TakeDamage(int amount)
     {
         _healthScript.TakeDamage(amount);
+        OnEnemyDamageTaken.Raise();
         if (_healthScript.Health <= 0)
         {
             OnEnemyDied.Raise();
