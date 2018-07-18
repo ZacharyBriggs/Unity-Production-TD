@@ -128,6 +128,81 @@ ModelImporter:
     100240: payload_rod_top_3_r_jnt1
     100242: payload_turrent_1_r_jnt2
     100244: payload_turrent_3_r_jnt1
+    100246: Proxi_Idle:CharacterModel_LowPoly_Body:Group45620
+    100248: Proxi_Idle:Gun_Mesh
+    100250: Proxi_Idle:Proxi_Hair_AuxSHJnt
+    100252: Proxi_Idle:Proxi_HairString_01_01SHJnt
+    100254: Proxi_Idle:Proxi_HairString_01_02SHJnt
+    100256: Proxi_Idle:Proxi_Head_JawEndSHJnt
+    100258: Proxi_Idle:Proxi_Head_JawSHJnt
+    100260: Proxi_Idle:Proxi_Head_TopSHJnt
+    100262: Proxi_Idle:Proxi_l_Arm_ClavicleSHJnt
+    100264: Proxi_Idle:Proxi_l_Arm_ElbowSHJnt
+    100266: Proxi_Idle:Proxi_l_Arm_ShoulderSHJnt
+    100268: Proxi_Idle:Proxi_l_Arm_WristSHJnt
+    100270: Proxi_Idle:Proxi_l_Eye_01SHJnt
+    100272: Proxi_Idle:Proxi_l_Finger_01_01SHJnt
+    100274: Proxi_Idle:Proxi_l_Finger_01_02SHJnt
+    100276: Proxi_Idle:Proxi_l_Finger_01_03SHJnt
+    100278: Proxi_Idle:Proxi_l_Finger_01_04SHJnt
+    100280: Proxi_Idle:Proxi_l_Finger_02_01SHJnt
+    100282: Proxi_Idle:Proxi_l_Finger_02_02SHJnt
+    100284: Proxi_Idle:Proxi_l_Finger_02_03SHJnt
+    100286: Proxi_Idle:Proxi_l_Finger_02_04SHJnt
+    100288: Proxi_Idle:Proxi_l_Finger_03_01SHJnt
+    100290: Proxi_Idle:Proxi_l_Finger_03_02SHJnt
+    100292: Proxi_Idle:Proxi_l_Finger_03_03SHJnt
+    100294: Proxi_Idle:Proxi_l_Finger_03_04SHJnt
+    100296: Proxi_Idle:Proxi_l_Finger_04_01SHJnt
+    100298: Proxi_Idle:Proxi_l_Finger_04_02SHJnt
+    100300: Proxi_Idle:Proxi_l_Finger_04_03SHJnt
+    100302: Proxi_Idle:Proxi_l_Finger_04_04SHJnt
+    100304: Proxi_Idle:Proxi_l_Leg_AnkleSHJnt
+    100306: Proxi_Idle:Proxi_l_Leg_BallSHJnt
+    100308: Proxi_Idle:Proxi_l_Leg_HipSHJnt
+    100310: Proxi_Idle:Proxi_l_Leg_KneeSHJnt
+    100312: Proxi_Idle:Proxi_l_Leg_ToeSHJnt
+    100314: Proxi_Idle:Proxi_l_Thumb_01_01SHJnt
+    100316: Proxi_Idle:Proxi_l_Thumb_01_02SHJnt
+    100318: Proxi_Idle:Proxi_l_Thumb_01_03SHJnt
+    100320: Proxi_Idle:Proxi_Neck_01SHJnt
+    100322: Proxi_Idle:Proxi_Neck_TopSHJnt
+    100324: Proxi_Idle:Proxi_r_Arm_ClavicleSHJnt
+    100326: Proxi_Idle:Proxi_r_Arm_ElbowSHJnt
+    100328: Proxi_Idle:Proxi_r_Arm_ShoulderSHJnt
+    100330: Proxi_Idle:Proxi_r_Arm_WristSHJnt
+    100332: Proxi_Idle:Proxi_r_Eye_01SHJnt
+    100334: Proxi_Idle:Proxi_r_Finger_01_01SHJnt
+    100336: Proxi_Idle:Proxi_r_Finger_01_02SHJnt
+    100338: Proxi_Idle:Proxi_r_Finger_01_03SHJnt
+    100340: Proxi_Idle:Proxi_r_Finger_01_04SHJnt
+    100342: Proxi_Idle:Proxi_r_Finger_02_01SHJnt
+    100344: Proxi_Idle:Proxi_r_Finger_02_02SHJnt
+    100346: Proxi_Idle:Proxi_r_Finger_02_03SHJnt
+    100348: Proxi_Idle:Proxi_r_Finger_02_04SHJnt
+    100350: Proxi_Idle:Proxi_r_Finger_03_01SHJnt
+    100352: Proxi_Idle:Proxi_r_Finger_03_02SHJnt
+    100354: Proxi_Idle:Proxi_r_Finger_03_03SHJnt
+    100356: Proxi_Idle:Proxi_r_Finger_03_04SHJnt
+    100358: Proxi_Idle:Proxi_r_Finger_04_01SHJnt
+    100360: Proxi_Idle:Proxi_r_Finger_04_02SHJnt
+    100362: Proxi_Idle:Proxi_r_Finger_04_03SHJnt
+    100364: Proxi_Idle:Proxi_r_Finger_04_04SHJnt
+    100366: Proxi_Idle:Proxi_r_Leg_AnkleSHJnt
+    100368: Proxi_Idle:Proxi_r_Leg_BallSHJnt
+    100370: Proxi_Idle:Proxi_r_Leg_HipSHJnt
+    100372: Proxi_Idle:Proxi_r_Leg_KneeSHJnt
+    100374: Proxi_Idle:Proxi_r_Leg_ToeSHJnt
+    100376: Proxi_Idle:Proxi_r_Thumb_01_01SHJnt
+    100378: Proxi_Idle:Proxi_r_Thumb_01_02SHJnt
+    100380: Proxi_Idle:Proxi_r_Thumb_01_03SHJnt
+    100382: Proxi_Idle:Proxi_ROOTSHJnt
+    100384: Proxi_Idle:Proxi_SHJntGrp
+    100386: Proxi_Idle:Proxi_Spine_01SHJnt
+    100388: Proxi_Idle:Proxi_Spine_02SHJnt
+    100390: Proxi_Idle:Proxi_Spine_03SHJnt
+    100392: Proxi_Idle:Proxi_Spine_04SHJnt
+    100394: Proxi_Idle:Proxi_Spine_TopSHJnt
     400000: Cylinder005
     400002: payload1:Cylinder005
     400004: payload_2:Box013
@@ -251,6 +326,81 @@ ModelImporter:
     400240: payload_rod_top_3_r_jnt1
     400242: payload_turrent_1_r_jnt2
     400244: payload_turrent_3_r_jnt1
+    400246: Proxi_Idle:CharacterModel_LowPoly_Body:Group45620
+    400248: Proxi_Idle:Gun_Mesh
+    400250: Proxi_Idle:Proxi_Hair_AuxSHJnt
+    400252: Proxi_Idle:Proxi_HairString_01_01SHJnt
+    400254: Proxi_Idle:Proxi_HairString_01_02SHJnt
+    400256: Proxi_Idle:Proxi_Head_JawEndSHJnt
+    400258: Proxi_Idle:Proxi_Head_JawSHJnt
+    400260: Proxi_Idle:Proxi_Head_TopSHJnt
+    400262: Proxi_Idle:Proxi_l_Arm_ClavicleSHJnt
+    400264: Proxi_Idle:Proxi_l_Arm_ElbowSHJnt
+    400266: Proxi_Idle:Proxi_l_Arm_ShoulderSHJnt
+    400268: Proxi_Idle:Proxi_l_Arm_WristSHJnt
+    400270: Proxi_Idle:Proxi_l_Eye_01SHJnt
+    400272: Proxi_Idle:Proxi_l_Finger_01_01SHJnt
+    400274: Proxi_Idle:Proxi_l_Finger_01_02SHJnt
+    400276: Proxi_Idle:Proxi_l_Finger_01_03SHJnt
+    400278: Proxi_Idle:Proxi_l_Finger_01_04SHJnt
+    400280: Proxi_Idle:Proxi_l_Finger_02_01SHJnt
+    400282: Proxi_Idle:Proxi_l_Finger_02_02SHJnt
+    400284: Proxi_Idle:Proxi_l_Finger_02_03SHJnt
+    400286: Proxi_Idle:Proxi_l_Finger_02_04SHJnt
+    400288: Proxi_Idle:Proxi_l_Finger_03_01SHJnt
+    400290: Proxi_Idle:Proxi_l_Finger_03_02SHJnt
+    400292: Proxi_Idle:Proxi_l_Finger_03_03SHJnt
+    400294: Proxi_Idle:Proxi_l_Finger_03_04SHJnt
+    400296: Proxi_Idle:Proxi_l_Finger_04_01SHJnt
+    400298: Proxi_Idle:Proxi_l_Finger_04_02SHJnt
+    400300: Proxi_Idle:Proxi_l_Finger_04_03SHJnt
+    400302: Proxi_Idle:Proxi_l_Finger_04_04SHJnt
+    400304: Proxi_Idle:Proxi_l_Leg_AnkleSHJnt
+    400306: Proxi_Idle:Proxi_l_Leg_BallSHJnt
+    400308: Proxi_Idle:Proxi_l_Leg_HipSHJnt
+    400310: Proxi_Idle:Proxi_l_Leg_KneeSHJnt
+    400312: Proxi_Idle:Proxi_l_Leg_ToeSHJnt
+    400314: Proxi_Idle:Proxi_l_Thumb_01_01SHJnt
+    400316: Proxi_Idle:Proxi_l_Thumb_01_02SHJnt
+    400318: Proxi_Idle:Proxi_l_Thumb_01_03SHJnt
+    400320: Proxi_Idle:Proxi_Neck_01SHJnt
+    400322: Proxi_Idle:Proxi_Neck_TopSHJnt
+    400324: Proxi_Idle:Proxi_r_Arm_ClavicleSHJnt
+    400326: Proxi_Idle:Proxi_r_Arm_ElbowSHJnt
+    400328: Proxi_Idle:Proxi_r_Arm_ShoulderSHJnt
+    400330: Proxi_Idle:Proxi_r_Arm_WristSHJnt
+    400332: Proxi_Idle:Proxi_r_Eye_01SHJnt
+    400334: Proxi_Idle:Proxi_r_Finger_01_01SHJnt
+    400336: Proxi_Idle:Proxi_r_Finger_01_02SHJnt
+    400338: Proxi_Idle:Proxi_r_Finger_01_03SHJnt
+    400340: Proxi_Idle:Proxi_r_Finger_01_04SHJnt
+    400342: Proxi_Idle:Proxi_r_Finger_02_01SHJnt
+    400344: Proxi_Idle:Proxi_r_Finger_02_02SHJnt
+    400346: Proxi_Idle:Proxi_r_Finger_02_03SHJnt
+    400348: Proxi_Idle:Proxi_r_Finger_02_04SHJnt
+    400350: Proxi_Idle:Proxi_r_Finger_03_01SHJnt
+    400352: Proxi_Idle:Proxi_r_Finger_03_02SHJnt
+    400354: Proxi_Idle:Proxi_r_Finger_03_03SHJnt
+    400356: Proxi_Idle:Proxi_r_Finger_03_04SHJnt
+    400358: Proxi_Idle:Proxi_r_Finger_04_01SHJnt
+    400360: Proxi_Idle:Proxi_r_Finger_04_02SHJnt
+    400362: Proxi_Idle:Proxi_r_Finger_04_03SHJnt
+    400364: Proxi_Idle:Proxi_r_Finger_04_04SHJnt
+    400366: Proxi_Idle:Proxi_r_Leg_AnkleSHJnt
+    400368: Proxi_Idle:Proxi_r_Leg_BallSHJnt
+    400370: Proxi_Idle:Proxi_r_Leg_HipSHJnt
+    400372: Proxi_Idle:Proxi_r_Leg_KneeSHJnt
+    400374: Proxi_Idle:Proxi_r_Leg_ToeSHJnt
+    400376: Proxi_Idle:Proxi_r_Thumb_01_01SHJnt
+    400378: Proxi_Idle:Proxi_r_Thumb_01_02SHJnt
+    400380: Proxi_Idle:Proxi_r_Thumb_01_03SHJnt
+    400382: Proxi_Idle:Proxi_ROOTSHJnt
+    400384: Proxi_Idle:Proxi_SHJntGrp
+    400386: Proxi_Idle:Proxi_Spine_01SHJnt
+    400388: Proxi_Idle:Proxi_Spine_02SHJnt
+    400390: Proxi_Idle:Proxi_Spine_03SHJnt
+    400392: Proxi_Idle:Proxi_Spine_04SHJnt
+    400394: Proxi_Idle:Proxi_Spine_TopSHJnt
     2100000: StingrayPBS1
     2300000: Cylinder005
     2300002: payload1:Cylinder005
@@ -488,6 +638,9 @@ ModelImporter:
     4300154: testla_base2_tesla_rod
     4300156: turrent_ring1
     4300158: payload_shaft_panel2
+    4300160: Proxi_Idle:CharacterModel_LowPoly_Body:Group45620
+    4300162: Proxi_Idle:Gun_Mesh
+    7400000: Take 001
     9500000: //RootNode
     13700000: payload_2:Box013
     13700002: payload_2:Cylinder003
@@ -555,6 +708,8 @@ ModelImporter:
     13700126: turrent_ring1
     13700128: turrent_shaft
     13700130: turrent_shaft 1
+    13700132: Proxi_Idle:CharacterModel_LowPoly_Body:Group45620
+    13700134: Proxi_Idle:Gun_Mesh
   externalObjects: {}
   materials:
     importMaterials: 0
