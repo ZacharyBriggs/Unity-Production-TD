@@ -17,7 +17,6 @@ public class WaveManagerBehaviour : MonoBehaviour
         for (int i = 0; i < WaveInfo.MaxEnemies; i++)
         {
             var e = Instantiate(EnemyPrefab, WaveInfo.EnemySpawnPositions[i], Quaternion.identity);
-            e.GetComponent<EnemyBehaviour>().OnEnemyDied.AddListener(OnEnemyDied);
         }
 
     }
