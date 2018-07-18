@@ -12,12 +12,7 @@ ModelImporter:
     3300000: //RootNode
     4300000: Barrelsthatcrashedmyscene1:pCylinder2
     9500000: //RootNode
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Barrelsthatcrashedmyscene1_initialShadingGroup1
-    second: {fileID: 2100000, guid: c669f0976434ce148bf66a8a4835f207, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
