@@ -3,8 +3,8 @@
 [CreateAssetMenu(menuName = "_IntVariable")]
 public class HealthScriptable : IntVariable
 {
-    [SerializeField] private int _mMaxValue = 5;
-    [SerializeField] private int _mValue = 1;
+    [SerializeField] private int _mMaxValue = 100;
+    [SerializeField] private int _mValue = 100;
 
     public int Health
     {

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -6,8 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class PayloadBehaviour : MonoBehaviour, IDamageable
 {
-//ToDo: we need to have methods to change the values of the intvariable references    
-    private HealthScriptable HealthScript;
+    //ToDo: we need to have methods to change the values of the intvariable references
+    [NonSerialized]public HealthScriptable HealthScript;
     [Header("Events")]
     public GameEvent OnPayLoadStopped;
     public GameEvent OnPayloadStart;
@@ -15,7 +16,7 @@ public class PayloadBehaviour : MonoBehaviour, IDamageable
     public GameEvent OnPaylodDied;
     public bool Stopped;
     public PathSriptable Path;
-    public int CurrentNode = 0;
+    [NonSerialized]public int CurrentNode = 0;
     private int NextNode = 1;
     private NavMeshAgent _payload;
 
