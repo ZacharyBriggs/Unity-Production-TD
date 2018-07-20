@@ -74,9 +74,8 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -144,16 +143,16 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: UI_SpreadSheet_42
+      name: UI_SpreadSheet_1
       rect:
         serializedVersion: 2
-        x: 747
-        y: 948
+        x: 742
+        y: 946
         width: 759
-        height: 56
+        height: 106
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 1, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -245,10 +244,10 @@ TextureImporter:
       name: UI_SpreadSheet_8
       rect:
         serializedVersion: 2
-        x: 491
-        y: 711
-        width: 45
-        height: 72
+        x: 38
+        y: 776
+        width: 486
+        height: 84
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -273,10 +272,10 @@ TextureImporter:
       name: UI_SpreadSheet_10
       rect:
         serializedVersion: 2
-        x: 536
-        y: 708
-        width: 28
-        height: 26
+        x: 563
+        y: 712
+        width: 42
+        height: 71
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -413,10 +412,10 @@ TextureImporter:
       name: UI_SpreadSheet_20
       rect:
         serializedVersion: 2
-        x: 16
-        y: 332
-        width: 1251
-        height: 208
+        x: 567
+        y: 548
+        width: 93
+        height: 94
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -427,10 +426,10 @@ TextureImporter:
       name: UI_SpreadSheet_21
       rect:
         serializedVersion: 2
-        x: 567
-        y: 548
-        width: 93
-        height: 94
+        x: 665
+        y: 508
+        width: 314
+        height: 158
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -483,10 +482,10 @@ TextureImporter:
       name: UI_SpreadSheet_25
       rect:
         serializedVersion: 2
-        x: 325
-        y: 879
-        width: 216
-        height: 43
+        x: 492
+        y: 675
+        width: 114
+        height: 108
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -497,30 +496,10 @@ TextureImporter:
       name: UI_SpreadSheet_26
       rect:
         serializedVersion: 2
-        x: 325
-        y: 877
-        width: 219
-        height: 46
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -101.5, y: 22}
-        - {x: -101.5, y: -21}
-        - {x: -97.5, y: -22}
-        - {x: 78.5, y: -22}
-        - {x: 106.5, y: -17}
-        - {x: 106.5, y: 22}
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: UI_SpreadSheet_1
-      rect:
-        serializedVersion: 2
-        x: 501
-        y: 652
-        width: 90
-        height: 158
+        x: 328
+        y: 880
+        width: 204
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -531,38 +510,10 @@ TextureImporter:
       name: UI_SpreadSheet_27
       rect:
         serializedVersion: 2
-        x: 480
-        y: 658
-        width: 140
-        height: 139
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: UI_SpreadSheet_28
-      rect:
-        serializedVersion: 2
-        x: 796
-        y: 944
-        width: 122
-        height: 121
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: UI_SpreadSheet_29
-      rect:
-        serializedVersion: 2
-        x: 734
-        y: 939
-        width: 853
-        height: 141
+        x: 764
+        y: 892
+        width: 524
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
