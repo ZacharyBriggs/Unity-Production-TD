@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ea30eaf3203ae545902a5e31d6151eb, type: 3}
-  m_Name: ProgresBar
+  m_Name: WaveProgress Scriptable
   m_EditorClassIdentifier: 
   MaxEnemies: 100
-  Progress: 220
+  Progress: 110
