@@ -6,17 +6,19 @@ using UnityEngine.UI;
 public class UIFillAmountBehaviour : MonoBehaviour
 {
     public Image _mImage;
-    public IntVariable _IntVariable;
+    public Variable variable;
 
     void Start()
     {
         ChangeFillAmount();
-        _IntVariable.onValueChanged += ChangeFillAmount;
+        variable.onValueChanged += ChangeFillAmount;
     }
 
     public void ChangeFillAmount()
     {
-        _mImage.fillAmount = _IntVariable.Value / (float)_IntVariable.MaxValue;
+
+        float result = (float)variable.Value / (float)variable.MaxValue;
+        _mImage.fillAmount = result;
     }
 
 }

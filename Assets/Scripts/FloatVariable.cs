@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "Variables/Int")]
-public class IntVariable : Variable
+[CreateAssetMenu(menuName ="Variables/Float")]
+public class FloatVariable : Variable
 {
-    public int _value;
-    public int _MaxValue;
+    public float _value;
+    public float _MaxValue;
     public override object Value
     {
         get
@@ -20,4 +20,5 @@ public class IntVariable : Variable
             return _MaxValue;
         }
     }
+
 }
