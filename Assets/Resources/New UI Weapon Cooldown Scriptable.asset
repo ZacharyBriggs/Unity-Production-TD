@@ -8,8 +8,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35b012b11c75c9948ae1c322acd37390, type: 3}
-  m_Name: WeaponCoolDownScriptable
+  m_Script: {fileID: 11500000, guid: c9bb813869f44d54185c4c92dc570573, type: 3}
+  m_Name: New UI Weapon Cooldown Scriptable
   m_EditorClassIdentifier: 
-  _mMaxValue: 10
-  _mValue: 0
+  MaxTemp: 100
+  Temp: 160

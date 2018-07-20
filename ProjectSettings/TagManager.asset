@@ -8,6 +8,9 @@ TagManager:
   - CrossHair
   - WaveProgessBar
   - Payload
+  - Checkpoint
+  - POV
+  - Enemy
   layers:
   - Default
   - TransparentFX

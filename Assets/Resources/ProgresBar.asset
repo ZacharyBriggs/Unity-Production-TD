@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ea30eaf3203ae545902a5e31d6151eb, type: 3}
   m_Name: ProgresBar
   m_EditorClassIdentifier: 
-  MaxEnemies: 20
-  Progress: 46
+  MaxEnemies: 100
+  Progress: 220

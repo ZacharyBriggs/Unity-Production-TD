@@ -9,8 +9,8 @@ public class PlayerShootingBehaviour : MachineGunBehaviour
 
     void Start()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+    //    Cursor.visible = true;
+    //    Cursor.lockState = CursorLockMode.Locked;
     }
 
     

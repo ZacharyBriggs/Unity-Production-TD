@@ -4,7 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Cooldown")]
 public class UIWeaponCooldownScriptable : IntVariable
 {
-    
+
     public int MaxTemp;
     public int Temp;
 
@@ -23,8 +23,5 @@ public class UIWeaponCooldownScriptable : IntVariable
         Temp += amount;
         if (Temp < 100) Debug.Log("Weapon Cool.");
         if (Temp == 100) Debug.Log("Weapon OVer Heated.");
-      
     }
-
-  
 }
