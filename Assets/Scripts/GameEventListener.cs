@@ -10,6 +10,8 @@ public class GameEventListener : MonoBehaviour
     public GameEvent GameEvent;
     public UnityEvent GameEventResponse;
 
+    [TextArea] public string Notes;
+
     private void OnEnable()
     {
         GameEvent.AddListener(this);

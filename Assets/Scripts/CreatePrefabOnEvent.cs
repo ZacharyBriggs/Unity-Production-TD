@@ -1,17 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class CreatePrefabOnEvent : MonoBehaviour
+public class CreatePrefabOnEvent : GameEventListener
 {
-    public Transform startTransform;
-
     public GameObject Prefab;
+
+    public Transform StartTransform;
     // Use this for initialization
 
     public void CreatePrefab()
     {
-        var go = Instantiate(Prefab, startTransform);
+        var go = Instantiate(Prefab, StartTransform);
         Destroy(go, .5f);
     }
 }

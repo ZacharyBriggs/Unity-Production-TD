@@ -8,8 +8,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35b012b11c75c9948ae1c322acd37390, type: 3}
-  m_Name: New Health Scriptable
+  m_Script: {fileID: 11500000, guid: 28f73d5374ac8ca4a9e2e2c18c6a31bc, type: 3}
+  m_Name: MachineGun
   m_EditorClassIdentifier: 
-  _mMaxValue: 100
-  _mValue: 0
+  _value: 2.0568612
+  _MaxValue: 8

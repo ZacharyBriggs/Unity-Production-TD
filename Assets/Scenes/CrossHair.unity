@@ -145,7 +145,6 @@ MonoBehaviour:
   OnShootEvent: {fileID: 11400000, guid: 7bd1a800e48f4ec40a4adc3999d59d0b, type: 2}
   Damage: 1
   Range: 2
-  canshoot: 0
 --- !u!4 &531714492
 Transform:
   m_ObjectHideFlags: 0
@@ -509,39 +508,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114236164162072670, guid: 89b469ed47cc0194685aae135e7a27cd,
-        type: 2}
-      propertyPath: m_FillAmount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1255377973408988, guid: 89b469ed47cc0194685aae135e7a27cd, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 89b469ed47cc0194685aae135e7a27cd, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1763876265 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1964434100246972, guid: 89b469ed47cc0194685aae135e7a27cd,
-    type: 2}
-  m_PrefabInternal: {fileID: 1763876264}
---- !u!114 &1763876266 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114236164162072670, guid: 89b469ed47cc0194685aae135e7a27cd,
-    type: 2}
-  m_PrefabInternal: {fileID: 1763876264}
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
---- !u!114 &1763876267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1763876265}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e5cb28e2e3f8f84aa6fa7e8748febba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _mImage: {fileID: 1763876266}
-  variable: {fileID: 11400000, guid: 2f4a1f2a0a7e59b4b965f6c6c81de7e3, type: 2}

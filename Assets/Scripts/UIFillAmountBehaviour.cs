@@ -15,8 +15,6 @@ public class UIFillAmountBehaviour : MonoBehaviour
 
     public void ChangeFillAmount()
     {
-        
-
         var v1 = Convert.ToSingle(variable.Value);
         var v2 = Convert.ToSingle(variable.MaxValue);
         var result = v1 / v2;

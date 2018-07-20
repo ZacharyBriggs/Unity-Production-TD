@@ -9,40 +9,36 @@ public class PlayerShootingBehaviour : MachineGunBehaviour
 
     void Start()
     {
-    //    Cursor.visible = true;
-    //    Cursor.lockState = CursorLockMode.Locked;
+        //    Cursor.visible = true;
+        //    Cursor.lockState = CursorLockMode.Locked;
     }
 
-    
+    public GameEvent OnAimStart;
+    public GameEvent OnAimEnd;
     void Update()
     {
+        if (Input.GetButtonDown("Fire2"))
+        {
+            OnAimStart.Raise();
+        }
+
+        if (Input.GetButtonUp("Fire2"))
+        {
+            OnAimEnd.Raise();
+        }
 
         Fpscam.SetActive(Input.GetButton("Fire2"));
         Freelookcam.SetActive(!Input.GetButton("Fire2"));
-        Freelookcam.GetComponent<Cinemachine.CinemachineVirtualCameraBase>().enabled = !Input.GetButton("Fire2");
+        var vcam = Freelookcam.GetComponent<Cinemachine.CinemachineVirtualCameraBase>();
+        if (vcam != null)
+            vcam.enabled = !Input.GetButton("Fire2");
         PlayerMovementBehaviour.TOGGLEMOVE = Input.GetButton("Fire2");
         if (Input.GetButtonDown("Fire1"))
         {
-            OnShootEvent.Raise();
-            RaycastHit hit = new RaycastHit();
-            var camforwardcast = Camera.main.transform.forward * 1000;
-            //todo:: we could set the linerenderer to exactly where it goes if we make it here
-            if (Physics.Raycast(this.transform.position, camforwardcast, out hit))
-            {
 
-                Debug.Log("Hit " + hit.collider.gameObject.tag);
-                Debug.DrawRay(this.transform.position, camforwardcast, Color.yellow, 1);
-                
-                if (hit.collider.gameObject.CompareTag("Enemy"))
-                {
-                    Target = hit.collider.gameObject.GetComponent<EnemyBehaviour>();                    
-                    Shoot();
-                }
-            }
-            else
-            {
-                Debug.Log("Did not hit.");
-            }
+            base.Shoot();
         }
     }
 }
+
+
