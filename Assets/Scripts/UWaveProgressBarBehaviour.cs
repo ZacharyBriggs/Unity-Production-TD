@@ -60,7 +60,7 @@ public class UWaveProgressBarBehaviour : KillEnemyBehaviour
 
     private void ChangeFillAmount()
     {
-        WaveProgressUI.fillAmount = Progress.Value / (float)Progress.MaxValue;
+        WaveProgressUI.fillAmount = (float)Progress.Value / (float)Progress.MaxValue;
     }
 
     //the way progress is determined is by how many enemies are left

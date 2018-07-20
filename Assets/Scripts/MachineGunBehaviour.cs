@@ -1,38 +1,34 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 
 public class MachineGunBehaviour : MonoBehaviour
 {
-    public float Cooldown;
+    [SerializeField]
+    protected WeaponCooldown _Cooldown;
+    public GameEvent OnShootEvent;
+
     public int Damage;
     public float Range;
-    protected EnemyBehaviour Target;
-    protected float Timer;
+
+    protected IDamageable Target;
+
     private LineRenderer line;
 
     void Start()
     {
-        Timer = Cooldown;
         line = GetComponent<LineRenderer>();
         line.alignment = LineAlignment.Local;
     }
 
-    void Update()
+    [ContextMenu("shoot")]
+    protected virtual void Shoot()
     {
-        Timer -= Time.deltaTime;
+        if (_Cooldown.CanShoot)//if we can shoot then shoot
+            _Cooldown.StartCooldown(this);
+
+        if (Target == null) //if we dont' have a target just return;
+            return;
+
+        Target.TakeDamage(Damage);
     }
-
-    protected void Shoot()
-    {
-        if (Target != null)
-        {
-           
-            Target.TakeDamage(Damage);
-            Timer = Cooldown;
-        }
-    }
-
-    public GameEvent OnShootEvent;
-
 }

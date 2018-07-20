@@ -4,18 +4,14 @@
 public class UIWaveProgressScriptable : IntVariable
 {
     public int MaxEnemies;
-    public int Progress;
-
-    public override int Value
+    public int Progress
     {
-        get { return Progress; }
+        get { return _value; }
+        set
+        {
+            _value = value;
+        }
     }
-
-    public override int MaxValue
-    {
-        get { return MaxEnemies; }
-    }
-
     public virtual void MakeProgress(int amount)
     {
         Progress += amount;
