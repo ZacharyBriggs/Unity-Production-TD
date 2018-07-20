@@ -8,6 +8,7 @@ public class PlayerMovementBehaviour : MonoBehaviour, IDamageable
     public float Speed = 10;
     public float WalkSpeed = 2;
     public float RunSpeed = 4;
+    private bool Stunned;
     public Vector3 InputVector;
     private Animator _animator;
     private CharacterController controller;
@@ -66,7 +67,7 @@ public class PlayerMovementBehaviour : MonoBehaviour, IDamageable
 
     void Move()
     {
-        if (controller.isGrounded)
+        if (controller.isGrounded && !Stunned)
         {
             var h = PlayerInput.InputVector.normalized.x;
             var v = PlayerInput.InputVector.normalized.z;
@@ -87,11 +88,13 @@ public class PlayerMovementBehaviour : MonoBehaviour, IDamageable
 
     public void TakeDamage(int amount)
     {
+        Stunned = true;
         _animator.SetBool("IsStunned",true);
     }
 
     void StopStun()
     {
+        Stunned = false;
         _animator.SetBool("IsStunned", false);
     }
 }

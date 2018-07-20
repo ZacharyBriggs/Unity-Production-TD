@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MachineGunBehaviour : MonoBehaviour
 {
-    public float Cooldown;
+    public float FireRate;
     public int Damage;
     public float Range;
     protected EnemyBehaviour Target;
@@ -13,7 +13,7 @@ public class MachineGunBehaviour : MonoBehaviour
 
     void Start()
     {
-        Timer = Cooldown;
+        Timer = FireRate;
         line = GetComponent<LineRenderer>();
         line.alignment = LineAlignment.Local;
     }
@@ -27,9 +27,8 @@ public class MachineGunBehaviour : MonoBehaviour
     {
         if (Target != null)
         {
-           
             Target.TakeDamage(Damage);
-            Timer = Cooldown;
+            Timer = FireRate;
         }
     }
 
