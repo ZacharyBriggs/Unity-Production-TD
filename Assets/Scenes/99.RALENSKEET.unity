@@ -1131,7 +1131,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 40
+  field of view: 50
   orthographic: 0
   orthographic size: 10
   m_Depth: 0
@@ -1156,8 +1156,8 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 196143259}
-  m_LocalRotation: {x: 0.042820122, y: 0.017777976, z: -0.0007620747, w: 0.9989244}
-  m_LocalPosition: {x: 354.4148, y: 1.4004906, z: 349.12192}
+  m_LocalRotation: {x: 0.21654712, y: -0.24865215, z: 0.057139236, w: 0.94234526}
+  m_LocalPosition: {x: 355.15494, y: 1.8704908, z: 348.60248}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1581,7 +1581,7 @@ MonoBehaviour:
   m_Follow: {fileID: 431929346}
   m_CommonLens: 1
   m_Lens:
-    FieldOfView: 45
+    FieldOfView: 50
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
@@ -1913,6 +1913,48 @@ Transform:
   m_Father: {fileID: 122115227}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &311065965
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4975885649954788, guid: e72d336b3e98c3944855c536bf472c2e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 303.4068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4975885649954788, guid: e72d336b3e98c3944855c536bf472c2e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000009536743
+      objectReference: {fileID: 0}
+    - target: {fileID: 4975885649954788, guid: e72d336b3e98c3944855c536bf472c2e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 329.8127
+      objectReference: {fileID: 0}
+    - target: {fileID: 4975885649954788, guid: e72d336b3e98c3944855c536bf472c2e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4975885649954788, guid: e72d336b3e98c3944855c536bf472c2e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4975885649954788, guid: e72d336b3e98c3944855c536bf472c2e, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4975885649954788, guid: e72d336b3e98c3944855c536bf472c2e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4975885649954788, guid: e72d336b3e98c3944855c536bf472c2e, type: 2}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e72d336b3e98c3944855c536bf472c2e, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &319737803
 GameObject:
   m_ObjectHideFlags: 0
@@ -2304,7 +2346,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 376885875}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 322.92, y: 0.69000006, z: 315.8712}
+  m_LocalPosition: {x: 322.92, y: 0.663, z: 315.8712}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3955,7 +3997,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 45
+    FieldOfView: 50
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
@@ -5230,7 +5272,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1014060665}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 257.9, y: 0.98, z: 300.5}
+  m_LocalPosition: {x: 257.9, y: -0.154, z: 300.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5542,7 +5584,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 45
+    FieldOfView: 50
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
@@ -5554,7 +5596,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1037782030}
-  m_LocalRotation: {x: 0.1764579, y: -0.24835661, z: 0.046061456, w: 0.95134646}
+  m_LocalRotation: {x: 0.16564822, y: -0.24855974, z: 0.043182544, w: 0.95336986}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5780,7 +5822,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  Notes: 
 --- !u!43 &1140069138
 Mesh:
   m_ObjectHideFlags: 0
@@ -7338,7 +7379,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  Notes: 
 --- !u!114 &1311180431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7367,7 +7407,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  Notes: 
 --- !u!4 &1322834829 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4484134835298006, guid: 616bf35afcc2ecb4285acd44cfef5e6b,
@@ -8232,7 +8271,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 45
+    FieldOfView: 50
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
@@ -8244,7 +8283,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1481711060}
-  m_LocalRotation: {x: 0.22181956, y: -0.24834676, z: 0.058537696, w: 0.9411129}
+  m_LocalRotation: {x: 0.2165454, y: -0.24866885, z: 0.057145398, w: 0.9423409}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -8492,7 +8531,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  Notes: 
 --- !u!114 &1500929074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8904,7 +8942,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  Notes: 
 --- !u!114 &1611280218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8933,7 +8970,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  Notes: 
 --- !u!4 &1620347136 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4593173483692030, guid: 53be44ce20329a64fad5d375aed848a8,
@@ -9346,7 +9382,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  Notes: 
 --- !u!114 &1700845157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9375,7 +9410,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  Notes: 
 --- !u!1001 &1702891525
 Prefab:
   m_ObjectHideFlags: 0
@@ -9800,7 +9834,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  Notes: 
 --- !u!114 &1743900641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9829,7 +9862,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  Notes: 
 --- !u!4 &1746897455 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4484134835298006, guid: 616bf35afcc2ecb4285acd44cfef5e6b,
@@ -9952,6 +9984,12 @@ Prefab:
       propertyPath: Freelookcam
       value: 
       objectReference: {fileID: 245737462}
+    - target: {fileID: 114666383645423990, guid: 726ea5b2a61d9d249b936c5e018e1164,
+        type: 2}
+      propertyPath: OnShootEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 7bd1a800e48f4ec40a4adc3999d59d0b,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 726ea5b2a61d9d249b936c5e018e1164, type: 2}
   m_IsPrefabParent: 0
@@ -10699,7 +10737,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  Notes: 
 --- !u!114 &1864159352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10728,7 +10765,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  Notes: 
 --- !u!4 &1881397736
 Transform:
   m_ObjectHideFlags: 0
@@ -11023,7 +11059,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  Notes: 
 --- !u!65 &1909358999
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11064,7 +11099,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  Notes: 
 --- !u!4 &1938030544
 Transform:
   m_ObjectHideFlags: 0
@@ -11597,7 +11631,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  Notes: 
 --- !u!4 &2053319976
 Transform:
   m_ObjectHideFlags: 0

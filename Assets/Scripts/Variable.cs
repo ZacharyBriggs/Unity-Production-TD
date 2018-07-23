@@ -7,3 +7,4 @@ public abstract class Variable : ScriptableObject
     public delegate void OnValueChanged();
     public OnValueChanged onValueChanged;
 }
+ 

@@ -20,4 +20,4 @@ public class IntVariable : Variable
             return _MaxValue;
         }
     }
-}
+}  

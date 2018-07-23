@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class UWaveProgressBarBehaviour : KillEnemyBehaviour
+public class UWaveProgressBarBehaviour : KillEnemyBehaviour 
 {
     public int EnemiesTotal = 20;
     public IntVariable Progress;

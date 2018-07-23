@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+ 
 public class WaveUIBehaviour : MonoBehaviour
 {
     private int WaveNum = 0;
