@@ -13,4 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _value: 0
   _MaxValue: 8
-  isShooting: 1
+  isShooting: 0
