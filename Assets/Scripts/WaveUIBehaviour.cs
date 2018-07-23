@@ -5,15 +5,27 @@ using UnityEngine.UI;
 
 public class WaveUIBehaviour : MonoBehaviour
 {
+    public List<WaveScriptable> WaveList;
+    private int DeadEnemies = 0;
     private int WaveNum = 0;
+    private Image WaveFill;
     private Text WaveNumText;
     private void Start()
     {
+        WaveFill = GameObject.Find("WaveProgressFill").GetComponent<Image>();
         WaveNumText = GameObject.Find("WaveNumberText").GetComponent<Text>();
+        WaveNumText.text = (WaveNum + 1).ToString();
     }
     public void OnWaveCompleted()
     {
         WaveNum++;
-        WaveNumText.text = WaveNum.ToString();
+        WaveNumText.text = (WaveNum + 1).ToString();
+        WaveFill.fillAmount = 0;
+    }
+
+    public void OnEnemyDied()
+    {
+        DeadEnemies++;
+        WaveFill.fillAmount = (float) DeadEnemies / WaveList[WaveNum].MaxEnemies;
     }
 }

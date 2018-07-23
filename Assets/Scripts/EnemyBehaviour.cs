@@ -70,7 +70,7 @@ public class EnemyBehaviour : MonoBehaviour, IDamageable
     {
         Destroy(this.gameObject);
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Payload") || other.gameObject.CompareTag("Player"))
             Attack(other.gameObject.GetComponent<IDamageable>());

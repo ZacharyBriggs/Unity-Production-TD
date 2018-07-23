@@ -8,6 +8,8 @@ public class PlayerMovementBehaviour : MonoBehaviour, IDamageable
     public float Speed = 10;
     public float WalkSpeed = 2;
     public float RunSpeed = 4;
+    public GameEvent PlayerAiming;
+    public GameEvent PlayerStoppedAiming;
     private bool Stunned;
     public Vector3 InputVector;
     private Animator _animator;
@@ -30,9 +32,16 @@ public class PlayerMovementBehaviour : MonoBehaviour, IDamageable
         //if toggle move is true the player is aiming
         GetWalk();
         if (TOGGLEMOVE)
+        {
+            PlayerAiming.Raise();
             OldMove();
+        }
         else
+        {
+            PlayerStoppedAiming.Raise();
             Move();
+        }
+
         SetAnimator();
 
     }

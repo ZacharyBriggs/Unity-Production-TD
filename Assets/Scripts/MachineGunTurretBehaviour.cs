@@ -32,7 +32,7 @@ public class MachineGunTurretBehaviour : MachineGunBehaviour
             }
         }
 
-        if (Timer <= 0)
+        if (Timer <= 0 && Target != null)
         {
             if (Vector3.Dot(transform.forward, Target.transform.position - transform.position) > 0)
             {

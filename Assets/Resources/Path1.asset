@@ -13,5 +13,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Steps:
   - {x: 362.9, y: 0, z: 334.6}
-  - {x: 317.21, y: 0, z: 327.53}
-  - {x: 257.9, y: 0, z: 300.5}
+  - {x: 313.87, y: 0, z: 327.53}
+  - {x: 227.5, y: 0, z: 286}

@@ -11,7 +11,6 @@ public class PlayerShootingBehaviour : MachineGunBehaviour
     private float HeatMeter = 0;
     public float MaxHeat = 100;
     private bool CoolingDown = false;
-    public int CooldownRate = 1000;
     public GameEvent OnCooldown;
     public Image CooldownFill;
     private Animator animator;
@@ -27,6 +26,7 @@ public class PlayerShootingBehaviour : MachineGunBehaviour
     void Update()
     {
         CooldownFill.fillAmount = HeatMeter / MaxHeat;
+        HeatMeter -= Time.deltaTime*5;
         Fpscam.SetActive(Input.GetButton("Fire2"));
         Freelookcam.SetActive(!Input.GetButton("Fire2"));
         Freelookcam.GetComponent<Cinemachine.CinemachineVirtualCameraBase>().enabled = !Input.GetButton("Fire2");
@@ -63,7 +63,7 @@ public class PlayerShootingBehaviour : MachineGunBehaviour
         }
         if(CoolingDown)
         {
-            HeatMeter -= CooldownRate*Time.deltaTime;
+            HeatMeter -= 175*Time.deltaTime;
             if (HeatMeter <= 0)
             {
                 CoolingDown = false;

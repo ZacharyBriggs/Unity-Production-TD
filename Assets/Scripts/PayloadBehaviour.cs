@@ -8,6 +8,8 @@ using UnityEngine.SceneManagement;
 public class PayloadBehaviour : MonoBehaviour, IDamageable
 {
     //ToDo: we need to have methods to change the values of the intvariable references
+    public int Health;
+    public int MaxHealth;
     [NonSerialized]public HealthScriptable HealthScript;
     [Header("Events")]
     public GameEvent OnPayLoadStopped;
@@ -36,18 +38,27 @@ public class PayloadBehaviour : MonoBehaviour, IDamageable
     public void TakeDamage(int amount)
     {
         OnTakeDamage.Raise();
-        HealthScript.Health -= amount;
+        HealthScript.TakeDamage(amount);
         if (HealthScript.Health <= 0)
+        {
             OnPaylodDied.Raise();
+            Die();
+        }
     }
     public void Die()
     {
         Destroy(this.gameObject);
+        Debug.Log("You are Loser");
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
+        SceneManager.LoadScene("mainmenu");
     }
 
     void Start()
     {
         HealthScript = ScriptableObject.CreateInstance<HealthScriptable>();
+        HealthScript.Health = this.Health;
+        MaxHealth = this.Health;
         this.transform.position = Path.Steps[0];
         _payload = GetComponent<NavMeshAgent>();
         _payload.destination = Path.Steps[1];
@@ -80,6 +91,8 @@ public class PayloadBehaviour : MonoBehaviour, IDamageable
     void Win()
     {
         Debug.Log("You Win!!!!");
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
         SceneManager.LoadScene("mainmenu");
     }
 }
