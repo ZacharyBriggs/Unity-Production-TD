@@ -8,10 +8,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fddfc8d1794ea143a44dd3ee08dd3a6, type: 3}
-  m_Name: Path1
+  m_Script: {fileID: 11500000, guid: b3c2a955de44a2942ac44b6ebf516147, type: 3}
+  m_Name: Waves1
   m_EditorClassIdentifier: 
-  Steps:
-  - {x: 362.9, y: 0, z: 334.6}
-  - {x: 317.21, y: 0, z: 327.53}
-  - {x: 257.9, y: 0, z: 300.5}
+  WaveList:
+  - {fileID: 11400000, guid: 6e6cb1c5210acb34b9a973aaf4d6480e, type: 2}
+  - {fileID: 11400000, guid: 7206e9fc231b3c14e9ff4539837d6ad8, type: 2}
