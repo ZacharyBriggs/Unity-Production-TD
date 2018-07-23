@@ -9,46 +9,45 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1441497202678166}
+  m_RootGameObject: {fileID: 1475761824966738}
   m_IsPrefabParent: 1
---- !u!1 &1441497202678166
+--- !u!1 &1475761824966738
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4259036536375626}
-  - component: {fileID: 33318314083201822}
-  - component: {fileID: 23151586211695920}
-  - component: {fileID: 95350842922048530}
-  - component: {fileID: 65787511996112030}
+  - component: {fileID: 4964929664566360}
+  - component: {fileID: 33492120098454574}
+  - component: {fileID: 65485476325326896}
+  - component: {fileID: 23377163559486500}
   m_Layer: 0
-  m_Name: FlatRock
+  m_Name: LaserWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4259036536375626
+--- !u!4 &4964929664566360
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1441497202678166}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 154.99551, y: 0.050188027, z: 240.52522}
-  m_LocalScale: {x: 7, y: 7, z: 7}
+  m_GameObject: {fileID: 1475761824966738}
+  m_LocalRotation: {x: -0, y: -0.035981745, z: -0, w: 0.99935246}
+  m_LocalPosition: {x: -10.059759, y: 5.04, z: -18.475561}
+  m_LocalScale: {x: 18.313305, y: 14.265522, z: 0.09327171}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23151586211695920
+  m_LocalEulerAnglesHint: {x: 0, y: -4.124, z: 0}
+--- !u!23 &23377163559486500
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1441497202678166}
+  m_GameObject: {fileID: 1475761824966738}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -57,7 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0bc8a0afce4d47745a37e6ad793b286f, type: 2}
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -65,7 +64,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
+  m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 0
@@ -77,39 +76,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33318314083201822
+--- !u!33 &33492120098454574
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1441497202678166}
-  m_Mesh: {fileID: 4300000, guid: 6274180d3974c0f45bf55ea34287802a, type: 3}
---- !u!65 &65787511996112030
+  m_GameObject: {fileID: 1475761824966738}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &65485476325326896
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1441497202678166}
+  m_GameObject: {fileID: 1475761824966738}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.80779743, y: 0.3923511, z: 1.1576807}
-  m_Center: {x: 0.07757844, y: 0.15417075, z: 0.057380408}
---- !u!95 &95350842922048530
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1441497202678166}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 6274180d3974c0f45bf55ea34287802a, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
