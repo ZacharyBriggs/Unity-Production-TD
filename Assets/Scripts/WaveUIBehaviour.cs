@@ -18,9 +18,9 @@ public class WaveUIBehaviour : MonoBehaviour
     }
     public void OnWaveCompleted()
     {
+        WaveFill.fillAmount = 0;
         WaveNum++;
         WaveNumText.text = (WaveNum + 1).ToString();
-        WaveFill.fillAmount = 0;
     }
 
     public void OnEnemyDied()

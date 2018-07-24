@@ -47,7 +47,7 @@ public class EnemyBehaviour : MonoBehaviour, IDamageable
     {
         _healthScript.TakeDamage(amount);
         OnEnemyDamageTaken.Raise();
-        if (_healthScript.Health <= 0)
+        if (_healthScript.Health <= 0 && !animator.GetBool("IsDead"))
         {
             OnEnemyDied.Invoke();
             animator.SetBool("IsDead", true);

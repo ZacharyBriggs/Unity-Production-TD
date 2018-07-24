@@ -20,14 +20,18 @@ public class MachineGunTurretBehaviour : MachineGunBehaviour
 	
     void Update()
     {
+        Enemies = new List<EnemyBehaviour>();
+        var foundEnemies = FindObjectsOfType<EnemyBehaviour>();
+        foreach (var enemy in foundEnemies)
+        {
+            Enemies.Add(enemy);
+        }
         foreach (var enemy in Enemies)
         {
             var distanceFrom = Vector3.Distance(transform.position, enemy.transform.position);
             if (distanceFrom < Range)
             {
                 if (Target == null)
-                    Target = enemy;
-                else if (distanceFrom < Vector3.Distance(transform.position, Target.transform.position))
                     Target = enemy;
             }
         }

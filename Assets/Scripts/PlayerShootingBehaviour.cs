@@ -14,6 +14,7 @@ public class PlayerShootingBehaviour : MachineGunBehaviour
     public GameEvent OnCooldown;
     public Image CooldownFill;
     private Animator animator;
+    public GameObject Prefab;
 
     void Start()
     {
@@ -34,9 +35,15 @@ public class PlayerShootingBehaviour : MachineGunBehaviour
         if (Input.GetButtonDown("Fire1") && !CoolingDown)
         {
             OnShootEvent.Raise();
+            animator.Play("RapidShot");
             HeatMeter += HeatRate;
             RaycastHit hit = new RaycastHit();
             var camforwardcast = Camera.main.transform.forward * 1000;
+            camforwardcast.x += 125;
+            camforwardcast.y += 25;
+            var linerender = GetComponent<LineRenderer>();
+            linerender.SetPosition(0,this.transform.position);
+            linerender.SetPosition(1,camforwardcast);
             //todo:: we could set the linerenderer to exactly where it goes if we make it here
             if (Physics.Raycast(this.transform.position, camforwardcast, out hit))
             {
@@ -54,7 +61,10 @@ public class PlayerShootingBehaviour : MachineGunBehaviour
             {
                 Debug.Log("Did not hit.");
             }
+
+            linerender.positionCount = 0;
         }
+
         if (HeatMeter >= MaxHeat || Input.GetButtonDown("Reload"))
         {
             CoolingDown = true;

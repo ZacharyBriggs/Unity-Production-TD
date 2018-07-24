@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 95434327627963660}
   - component: {fileID: 143895404641724940}
   - component: {fileID: 114090393704296626}
+  - component: {fileID: 114089692229764714}
+  - component: {fileID: 114664800781639876}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Player
@@ -249,7 +251,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4679702418132106}
-  - component: {fileID: 65048973620965354}
   - component: {fileID: 23132465227376486}
   - component: {fileID: 114666383645423990}
   m_Layer: 0
@@ -2314,18 +2315,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &65048973620965354
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1285407660012802}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &95434327627963660
 Animator:
   serializedVersion: 3
@@ -2343,6 +2332,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114089692229764714
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1003549757356666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb422d9ed7fb58342947185e1981f693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startTransform: {fileID: 4405233840436116}
+  Prefab: {fileID: 1389580774934094, guid: a2fd787d79261a34db1731ca79ec96a3, type: 2}
 --- !u!114 &114090393704296626
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2357,9 +2359,40 @@ MonoBehaviour:
   Speed: 10
   WalkSpeed: 4
   RunSpeed: 8
+  PlayerAiming: {fileID: 11400000, guid: 2e1e059a6abd04441bbf8014433d20f8, type: 2}
+  PlayerStoppedAiming: {fileID: 11400000, guid: f4a0f65d6ebaa8b46bcf4e25ad9bdb5a,
+    type: 2}
   InputVector: {x: 0, y: 0, z: 0}
   camRight: {x: 0, y: 0, z: 0}
   camForward: {x: 0, y: 0, z: 0}
+--- !u!114 &114664800781639876
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1003549757356666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64fde5c8e9a2bb0448411d2f20aed070, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: 7bd1a800e48f4ec40a4adc3999d59d0b, type: 2}
+  GameEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114089692229764714}
+        m_MethodName: CreatePrefab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114666383645423990
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2371,12 +2404,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49c6f7b9819b5d548a88061fe6c44727, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cooldown: 1
+  FireRate: 0
   Damage: 10
   Range: 30
-  OnShootEvent: {fileID: 0}
+  OnShootEvent: {fileID: 11400000, guid: 7bd1a800e48f4ec40a4adc3999d59d0b, type: 2}
   Fpscam: {fileID: 0}
   Freelookcam: {fileID: 0}
+  HeatRate: 10
+  MaxHeat: 100
+  OnCooldown: {fileID: 11400000, guid: 5b24f654716653a488bef1cd48b4a93b, type: 2}
+  CooldownFill: {fileID: 0}
+  Prefab: {fileID: 0}
 --- !u!137 &137889420717069268
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
