@@ -7,7 +7,7 @@ public class MainMenuBehaviour : MonoBehaviour
 {
     public void StartButton()
     {
-        SceneManager.LoadScene("99.environment");
+        SceneManager.LoadScene("1.environment");
     }
 
     public void QuitButton()

@@ -27,6 +27,8 @@ public class PlayerShootingBehaviour : MachineGunBehaviour
     void Update()
     {
         CooldownFill.fillAmount = HeatMeter / MaxHeat;
+        if (HeatMeter < 0)
+            HeatMeter = 0;
         HeatMeter -= Time.deltaTime*5;
         Fpscam.SetActive(Input.GetButton("Fire2"));
         Freelookcam.SetActive(!Input.GetButton("Fire2"));
@@ -42,8 +44,8 @@ public class PlayerShootingBehaviour : MachineGunBehaviour
             camforwardcast.x += 125;
             camforwardcast.y += 25;
             var linerender = GetComponent<LineRenderer>();
-            linerender.SetPosition(0,this.transform.position);
-            linerender.SetPosition(1,camforwardcast);
+            //linerender.SetPosition(0,this.transform.position);
+            //linerender.SetPosition(1,camforwardcast);
             //todo:: we could set the linerenderer to exactly where it goes if we make it here
             if (Physics.Raycast(this.transform.position, camforwardcast, out hit))
             {

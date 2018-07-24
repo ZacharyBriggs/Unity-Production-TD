@@ -7,7 +7,9 @@ public class MachineGunBehaviour : MonoBehaviour
     public float FireRate;
     public int Damage;
     public float Range;
+    [SerializeField]
     protected EnemyBehaviour Target;
+    [SerializeField]
     protected float Timer;
     private LineRenderer line;
 
@@ -27,8 +29,11 @@ public class MachineGunBehaviour : MonoBehaviour
     {
         if (Target != null)
         {
-            Target.TakeDamage(Damage);
-            Timer = FireRate;
+            if (Target.Health > 0)
+            {
+                Target.TakeDamage(Damage);
+                Timer = FireRate;
+            }
         }
     }
 

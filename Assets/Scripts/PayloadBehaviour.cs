@@ -8,9 +8,7 @@ using UnityEngine.SceneManagement;
 public class PayloadBehaviour : MonoBehaviour, IDamageable
 {
     //ToDo: we need to have methods to change the values of the intvariable references
-    public int Health;
-    public int MaxHealth;
-    [NonSerialized]public HealthScriptable HealthScript;
+    public HealthScriptable HealthScript;
     [Header("Events")]
     public GameEvent OnPayLoadStopped;
     public GameEvent OnPayloadStart;
@@ -56,9 +54,6 @@ public class PayloadBehaviour : MonoBehaviour, IDamageable
 
     void Start()
     {
-        HealthScript = ScriptableObject.CreateInstance<HealthScriptable>();
-        HealthScript.Health = this.Health;
-        MaxHealth = this.Health;
         this.transform.position = Path.Steps[0];
         _payload = GetComponent<NavMeshAgent>();
         _payload.destination = Path.Steps[1];

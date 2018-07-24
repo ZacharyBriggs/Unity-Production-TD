@@ -90,7 +90,6 @@ GameObject:
   - component: {fileID: 224521592930357472}
   - component: {fileID: 222398939459332696}
   - component: {fileID: 114096052990501754}
-  - component: {fileID: 114909281265294044}
   m_Layer: 5
   m_Name: PayloadHealthBar
   m_TagString: Untagged
@@ -625,18 +624,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &114909281265294044
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1255377973408988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0016b3403e5eaa4ca802694966fd07d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HealthUI: {fileID: 114357601730225508}
 --- !u!114 &114974109012641934
 MonoBehaviour:
   m_ObjectHideFlags: 1

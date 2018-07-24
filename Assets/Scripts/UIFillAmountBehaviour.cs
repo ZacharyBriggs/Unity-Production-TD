@@ -5,21 +5,11 @@ using UnityEngine.UI;
 public class UIFillAmountBehaviour : MonoBehaviour
 {
     public Image _mImage;
-    public Variable variable;
+    public HealthScriptable Health;
 
-    private void Start()
+
+    private void Update()
     {
-        variable.onValueChanged += ChangeFillAmount;
-        ChangeFillAmount();
-    }
-
-    public void ChangeFillAmount()
-    {
-        
-
-        var v1 = Convert.ToSingle(variable.Value);
-        var v2 = Convert.ToSingle(variable.MaxValue);
-        var result = v1 / v2;
-        _mImage.fillAmount = result;
+        _mImage.fillAmount = (float)Health._mValue / Health._mMaxValue;
     }
 }
