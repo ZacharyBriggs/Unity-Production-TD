@@ -160,7 +160,7 @@ ModelImporter:
     2100000: lambert1
     4300000: CharacterModel_LowPoly_Body:Group45620
     4300002: Gun_Mesh
-    7400000: Take 001
+    7400000: Stun
     9500000: //RootNode
     13700000: CharacterModel_LowPoly_Body:Group45620
     13700002: Gun_Mesh
@@ -179,16 +179,7 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
-      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
-      improve retargeting quality.\n\t'Proxi_Spine_01SHJnt' has translation animation
-      that will be discarded.\n\t'Proxi_Spine_02SHJnt' has translation animation that
-      will be discarded.\n\t'Proxi_Spine_03SHJnt' has translation animation that will
-      be discarded.\n\t'Proxi_Spine_04SHJnt' has translation animation that will be
-      discarded.\n\t'Proxi_Spine_04SHJnt' is inbetween humanoid transforms and has
-      rotation animation that will be discarded.\n\t'Proxi_Spine_TopSHJnt' has translation
-      animation that will be discarded.\n\t'Proxi_Spine_TopSHJnt' is inbetween humanoid
-      transforms and has rotation animation that will be discarded.\n"
+    animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -199,7 +190,43 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Stun
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 1
+        functionName: StopStun
+        data: 
+        objectReferenceParameter: {fileID: 1003549757356666, guid: 726ea5b2a61d9d249b936c5e018e1164,
+          type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

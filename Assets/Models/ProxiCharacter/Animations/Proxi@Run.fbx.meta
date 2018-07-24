@@ -160,7 +160,7 @@ ModelImporter:
     2100000: lambert1
     4300000: CharacterModel_LowPoly_Body:Group45620
     4300002: Gun_Mesh
-    7400000: Take 001
+    7400000: Run
     9500000: //RootNode
     13700000: CharacterModel_LowPoly_Body:Group45620
     13700002: Gun_Mesh
@@ -179,14 +179,7 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
-      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
-      improve retargeting quality.\n\t'Proxi_Spine_01SHJnt' has translation animation
-      that will be discarded.\n\t'Proxi_Spine_02SHJnt' has translation animation that
-      will be discarded.\n\t'Proxi_Spine_03SHJnt' has translation animation that will
-      be discarded.\n\t'Proxi_Spine_04SHJnt' is inbetween humanoid transforms and
-      has rotation animation that will be discarded.\n\t'Proxi_Spine_TopSHJnt' is
-      inbetween humanoid transforms and has rotation animation that will be discarded.\n"
+    animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -197,7 +190,35 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

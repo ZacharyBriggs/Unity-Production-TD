@@ -1,0 +1,38 @@
+﻿using UnityEngine;
+
+[CreateAssetMenu(menuName = "_IntVariable")]
+public class HealthScriptable : IntVariable
+{
+    [SerializeField] private int _mMaxValue = 100;
+    [SerializeField] private int _mValue = 100;
+    
+    public int Health
+    {
+        get { return _mValue; }
+        set
+        {
+            _mValue = value;
+            if (onValueChanged != null)
+                onValueChanged();
+        }
+    }
+ 
+    //ToDo: Move TakeDamage to a MonoBehaviour or interface implementation
+    public virtual void TakeDamage(int amount)
+    {
+        Health -= amount;
+        if (Health <= 0)
+        {
+
+        }
+    }
+
+    public virtual void Recover(int amount)
+    {
+        Health += amount;
+        if (Health < _mMaxValue)
+        {
+            Debug.Log("Healing");
+        }
+    }
+}
