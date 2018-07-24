@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 222058800522072700}
   - component: {fileID: 114133521400918750}
   - component: {fileID: 114386155794673798}
-  - component: {fileID: 114230467256507600}
+  - component: {fileID: 114198480868271782}
   m_Layer: 5
   m_Name: WaveProgressBar
   m_TagString: Untagged
@@ -342,7 +342,7 @@ MonoBehaviour:
   m_Text: 'Payload
 
     Health'
---- !u!114 &114230467256507600
+--- !u!114 &114198480868271782
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -353,7 +353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64fde5c8e9a2bb0448411d2f20aed070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameEvent: {fileID: 11400000, guid: 9d50e032f8951d942b5ab1f7b13451af, type: 2}
+  GameEvent: {fileID: 11400000, guid: 48f09c12194a3924f95ed94508e690c0, type: 2}
   GameEventResponse:
     m_PersistentCalls:
       m_Calls:
