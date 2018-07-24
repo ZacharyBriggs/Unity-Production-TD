@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class UIWaveProgressBarBehaviour : KillEnemyBehaviour
+public class UWaveProgressBarBehaviour : KillEnemyBehaviour 
 {
     public int EnemiesTotal = 20;
     public IntVariable Progress;
@@ -60,7 +60,7 @@ public class UIWaveProgressBarBehaviour : KillEnemyBehaviour
 
     private void ChangeFillAmount()
     {
-        WaveProgressUI.fillAmount = Progress.Value / (float)Progress.MaxValue;
+        WaveProgressUI.fillAmount = (float)Progress.Value / (float)Progress.MaxValue;
     }
 
     //the way progress is determined is by how many enemies are left

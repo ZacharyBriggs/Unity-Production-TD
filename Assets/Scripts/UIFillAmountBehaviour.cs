@@ -1,22 +1,25 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UIFillAmountBehaviour : MonoBehaviour
 {
     public Image _mImage;
-    public IntVariable _IntVariable;
+    public Variable variable;
 
-    void Start()
+    private void Start()
     {
+        variable.onValueChanged += ChangeFillAmount;
         ChangeFillAmount();
-        _IntVariable.onValueChanged += ChangeFillAmount;
     }
 
     public void ChangeFillAmount()
     {
-        _mImage.fillAmount = _IntVariable.Value / (float)_IntVariable.MaxValue;
-    }
+        
 
+        var v1 = Convert.ToSingle(variable.Value);
+        var v2 = Convert.ToSingle(variable.MaxValue);
+        var result = v1 / v2;
+        _mImage.fillAmount = result;
+    }
 }
