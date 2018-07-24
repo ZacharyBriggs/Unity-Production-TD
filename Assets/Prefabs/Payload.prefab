@@ -3285,7 +3285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cooldown: 0.1
   Damage: 1
-  Range: 99
+  Range: 20
 --- !u!114 &114821025293632672
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3326,8 +3326,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b876ce3edb5b6a949841af324553befe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 100
-  MaxHealth: 100
+  Health: 9999
+  MaxHealth: 9999
   OnPayLoadStopped: {fileID: 11400000, guid: 656a9ce5058c6ac4eb477df4e06355cf, type: 2}
   OnPayloadStart: {fileID: 11400000, guid: 4efb94d310795c948857f6ef08c71a80, type: 2}
   OnTakeDamage: {fileID: 11400000, guid: 8f552691fdf806b489c8745ca6f929a4, type: 2}
